@@ -93,7 +93,7 @@ const translations = {
       card2Title: "iCloud 备份与便捷导入导出",
       card2Desc: "可开启 iCloud 自动备份，也可导出完整备份文件并在需要时导入恢复。备份状态取决于 iCloud 账户、网络和可用空间。",
       card3Title: "学习成果留在你手中",
-      card3Desc: "照片、词卡和复习记录保存在你的设备与个人备份中，可继续查看、复习和导出。"
+      card3Desc: "照片、词卡和复习记录保存在你的设备与个人备份中，可继续查看和导出。"
     },
     footer: {
       copy: "拾词贴 LexiSprig · 让外语回到真实生活场景。",
@@ -116,8 +116,8 @@ const translations = {
       s3P1: "在任意场景详情页生成场景短文后，点击「发送到灵感树洞」，即可将当前场景图与多词串联短文一键带入灵感树洞 (InspirationDraft) 继续写成日常随笔。",
       s3P2: "你可以在「设置 → 备份与恢复」中开启 iCloud Drive 自动备份，或随时导出备份文件并在需要时导入恢复，妥善保存全部照片、贴纸与学习进度。",
       s4Title: "4. 购买与数据访问",
-      s4P1: "会员方案在 App 内可用时，你可以选择月订阅、年订阅或一次性永久解锁。会员解锁新的本地 AI 生成；已保存的照片词卡、学习与复习、备份和导出继续免费。符合 Apple 试用资格且购买页提供优惠时，月方案可含 7 天试用，年方案可含 1 个月试用；购买确认页会显示适用价格、试用资格和续费金额。",
-      s4P2: "订阅由 Apple 处理，可在 Apple ID 的订阅设置中管理或取消；永久解锁为一次性购买。我们不在网站收款，也不会获取你的支付卡信息。若方案暂不可用，你仍可继续查看、学习、复习和导出已有内容。",
+      s4P1: "会员方案在 App 内可用时，你可以选择月订阅、年订阅或一次性永久解锁。高级会员可使用单词复习（包括今日复习、记忆曲线复习、错题复习、标签复习和进阶轮次），并解锁新的本地 AI 学习内容生成。免费用户仍可查看和编辑已保存词卡、进行基础学习、查看学习记录与复习历史和统计，并备份或导出数据；开始或恢复复习需要有效的高级会员权益。会员到期不会删除或遮挡已有内容。符合 Apple 试用资格且购买页提供优惠时，月方案可含 7 天试用，年方案可含 1 个月试用；购买确认页会显示适用价格、试用资格和续费金额。",
+      s4P2: "订阅由 Apple 处理，可在 Apple ID 的订阅设置中管理或取消；永久解锁为一次性购买。我们不在网站收款，也不会获取你的支付卡信息。没有有效高级会员时，你仍可查看、编辑已有词卡并继续基础学习，也可查看学习记录、复习历史与统计；但不能开始或继续复习。",
       s5Title: "5. 联系我们",
       s5P1: "如果以上说明未能解决你的问题，或你有任何功能建议与反馈，欢迎发送邮件至："
     },
@@ -146,10 +146,10 @@ const translations = {
       s1Title: "1. 条款接受与 Apple 标准最终用户许可协议 (EULA)",
       s1P1: "下载或使用拾词贴（LexiSprig）即表示你同意遵守本使用条款。本应用同时适用 Apple 标准最终用户许可协议（Standard EULA）：",
       s2Title: "2. 当前版本与应用内购买",
-      s2P1: "会员方案在 App 内提供时，包括月订阅、年订阅和一次性永久解锁。会员解锁新的本地 AI 生成；已保存的照片词卡、学习与复习、备份和导出不会因会员到期而受限。购买仅通过 Apple App Store 完成；本网站不提供结账或收款。",
+      s2P1: "会员方案在 App 内提供时，包括月订阅、年订阅和一次性永久解锁。高级会员可使用单词复习（包括今日复习、记忆曲线复习、错题复习、标签复习和进阶轮次），并解锁新的本地 AI 学习内容生成。免费用户仍可查看和编辑已保存词卡、进行基础学习、查看学习记录与复习历史和统计，并备份或导出数据；开始或恢复复习需要有效的高级会员权益。会员到期不会删除或遮挡已有词卡、生成内容或学习数据。购买仅通过 Apple App Store 完成；本网站不提供结账或收款。",
       s2P2: "购买前，App Store 会显示适用价格、税费、优惠资格和续订条件。符合资格且购买页提供优惠时，月订阅可含 7 天免费试用，年订阅可含 1 个月免费试用；试用结束后按购买确认页所示价格续订。订阅会自动续订，除非你通过 Apple ID 订阅设置取消。永久解锁为一次性购买，不会续订。",
       s3Title: "3. 用户数据与学习成果",
-      s3P1: "你的照片、词卡及学习记录保存在设备本地，并可按你的选择备份或导出。会员到期或未购买不会限制你访问已有学习内容。",
+      s3P1: "你的照片、词卡及学习记录保存在设备本地，并可按你的选择备份或导出。没有有效高级会员时，你仍可查看已有词卡、生成内容、学习记录、复习历史和统计，但不能开始或继续复习。会员到期不会删除或遮挡这些内容和数据。",
       s4Title: "4. 本地 AI 模型与生成内容免责声明",
       s4P1: "本地 AI 模型下载会占用设备存储空间。AI 生成的词义、例句、场景短文和复习讲解仅供语言学习参考，可能存在不完整或偏差；重要内容请结合可靠词典复核。",
       s5Title: "5. 用户内容权利与联系方式",
@@ -262,7 +262,7 @@ const translations = {
       card2Title: "iCloud Backup & Easy Export / Import",
       card2Desc: "Enable automatic iCloud backup, or export a complete backup file and import it when needed. Backup status depends on your iCloud account, network, and available storage.",
       card3Title: "Your Learning Progress Stays Yours",
-      card3Desc: "Your photos, vocabulary cards, and review history stay in your library and personal backup, ready to review or export."
+      card3Desc: "Your photos, vocabulary cards, and review history stay in your library and personal backup, where you can view or export them."
     },
     footer: {
       copy: "LexiSprig · Bring languages back to real-life scenes.",
@@ -285,8 +285,8 @@ const translations = {
       s3P1: "After generating a Scene Passage on any scene detail screen, tap Send to InspirationDraft to carry the photo and passage straight into InspirationDraft for journaling or story writing.",
       s3P2: "In Settings → Backup & Restore, you can enable automatic iCloud Drive backups or easily export and import your library to keep all photos, stickers, and review progress safe.",
       s4Title: "4. Purchases & Access to Your Library",
-      s4P1: "When membership plans are available in the app, choose a monthly or yearly subscription, or a one-time lifetime unlock. Membership unlocks new on-device AI generation; your saved photo cards, learning and review, backup, and export remain free. If Apple offers an introductory offer and you are eligible, the monthly plan may include a 7-day trial and the yearly plan may include a 1-month trial. The purchase confirmation shows the applicable price, trial eligibility, and renewal amount.",
-      s4P2: "Apple processes subscriptions, which you can manage or cancel in your Apple ID subscription settings. Lifetime access is a one-time purchase. We do not take payments on this website or receive your payment card details. If plans are temporarily unavailable, you can still access, study, review, and export existing content.",
+      s4P1: "When membership plans are available in the app, choose a monthly or yearly subscription, or a one-time lifetime unlock. An active premium membership unlocks vocabulary review, including daily and spaced-repetition sessions, mistake review, tag-based review, and advanced rounds, as well as new on-device AI learning-content generation. Free users can still view and edit saved cards, continue basic learning, view study records, review history and statistics, and back up or export their data; an active premium entitlement is required to start or resume a review session. Expiration does not delete or hide existing content. If Apple offers an introductory offer and you are eligible, the monthly plan may include a 7-day trial and the yearly plan may include a 1-month trial. The purchase confirmation shows the applicable price, trial eligibility, and renewal amount.",
+      s4P2: "Apple processes subscriptions, which you can manage or cancel in your Apple ID subscription settings. Lifetime access is a one-time purchase. We do not take payments on this website or receive your payment card details. Without an active premium entitlement, you can still view and edit saved content, continue basic learning, and view study records, review history, and statistics, but you cannot start or continue a review session.",
       s5Title: "5. Contact Us",
       s5P1: "Still have questions or feedback? Reach us anytime by email at:"
     },
@@ -315,10 +315,10 @@ const translations = {
       s1Title: "1. Acceptance of Terms & Apple Standard EULA",
       s1P1: "By downloading or using LexiSprig, you agree to these Terms of Use. LexiSprig is also subject to the Apple Standard End User License Agreement (EULA):",
       s2Title: "2. Current Release and In-App Purchases",
-      s2P1: "When available in the app, membership plans include monthly and yearly subscriptions and a one-time lifetime unlock. Membership unlocks new on-device AI generation. Your saved photo cards, learning and review, backup, and export remain available when membership expires. Purchases are made through Apple App Store; this website does not provide checkout or collect payments.",
+      s2P1: "When offered in the app, membership plans include monthly and yearly subscriptions and a one-time lifetime unlock. An active premium membership unlocks vocabulary review, including daily and spaced-repetition sessions, mistake review, tag-based review, and advanced rounds, as well as new on-device AI learning-content generation. Free users can still view and edit saved cards, continue basic learning, view study records, review history and statistics, and back up or export their data; an active premium entitlement is required to start or resume a review session. Expiration does not delete or hide existing cards, generated content, or learning data. Purchases are made through Apple App Store; this website does not provide checkout or collect payments.",
       s2P2: "Before purchase, the App Store displays the applicable price, taxes, offer eligibility, and renewal terms. If offered by Apple and available to you, the monthly plan may include a 7-day free trial and the yearly plan may include a 1-month free trial. After a trial, the subscription renews at the price shown on the purchase confirmation unless you cancel through your Apple ID subscription settings. Lifetime access is a one-time purchase and does not renew.",
       s3Title: "3. Your Content and Learning Data",
-      s3P1: "Your photos, vocabulary cards, and study records are stored on your device and may be backed up or exported at your choice. Expired or absent membership does not restrict access to existing learning content.",
+      s3P1: "Your photos, vocabulary cards, and study records are stored on your device and may be backed up or exported at your choice. Without an active premium entitlement, you can still view saved cards, generated content, study records, review history, and statistics, but you cannot start or continue a review session. Membership expiration does not delete or hide this content or data.",
       s4Title: "4. Local AI Models & Reference-Only Output Disclaimer",
       s4P1: "Downloading the offline on-device AI model requires device storage. AI-generated word meanings, examples, Scene Passages, and review explanations are for language-learning reference and may be incomplete or inaccurate; check important information against a reliable dictionary.",
       s5Title: "5. User Responsibility & Contact",
