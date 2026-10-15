@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>应用支持 — 拾词贴 LexiSprig</title>
+  <meta name="description" content="了解拾词贴的多语种设置、本地 AI 模型下载、灵感树洞联动与 iCloud 备份。">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="support" data-asset-prefix="">
+  <nav class="navbar" id="site-nav">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-link">
+        <img src="icons/app_icon.png" alt="LexiSprig Icon" class="brand-icon" width="36" height="36">
+        <span class="brand-text">
+          <span class="brand-title" data-i18n="nav.brand">拾词贴 LexiSprig</span>
+          <span class="brand-Tagline" data-i18n="nav.tagline">眼见即所得的多语实景词汇本</span>
+        </span>
+      </a>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-menu" aria-label="打开导航菜单">
+        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="nav-menu" id="site-nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html#pain-3" data-i18n="nav.pain3">开口表达</a></li>
+          <li><a href="index.html#pain-2" data-i18n="nav.pain2">生活话题</a></li>
+          <li><a href="index.html#pain-1" data-i18n="nav.pain1">一景多语</a></li>
+          <li><a href="index.html#gallery" data-i18n="nav.gallery">界面预览</a></li>
+          <li><a href="support.html" data-i18n="nav.support">应用支持</a></li>
+          <li><a href="legal/privacy.html" data-i18n="nav.privacy">隐私政策</a></li>
+          <li><a href="legal/terms.html" data-i18n="nav.terms">使用条款</a></li>
+        </ul>
+        <div class="locale-switcher" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-switch is-active" data-set-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" class="lang-switch" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="subpage-main">
+    <div class="subpage-container">
+      <a href="index.html" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span data-i18n="common.backHome">返回首页</span>
+      </a>
+
+      <header class="subpage-header">
+        <div class="section-kicker">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span data-i18n="supportPage.kicker">应用支持与常见问题</span>
+        </div>
+        <h1 data-i18n="supportPage.title">需要帮助？我们随时为你解答</h1>
+        <p class="subpage-meta" data-i18n="supportPage.updated">支持邮箱：breet.jia@gmail.com</p>
+      </header>
+
+      <div class="legal-stack">
+        <article class="legal-card">
+          <div class="legal-card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <h2 data-i18n="supportPage.s1Title">1. 如何设置多个学习语种与解释语种？</h2>
+          </div>
+          <p data-i18n="supportPage.s1P1">首次打开拾词贴或前往「设置 → 学习语种」，你可以选择英语、日语或中文作为学习语种。释义语言和朗读语音可在各自设置中单独调整。</p>
+          <p data-i18n="supportPage.s1P2">如果你在使用一段时间后新增了学习语种，应用会在后台或你打开旧场景卡时自动补齐新增语种的词条与例句，无需重新拍照。</p>
+        </article>
+
+        <article class="legal-card">
+          <div class="legal-card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+            </svg>
+            <h2 data-i18n="supportPage.s2Title">2. 本地 AI 模型下载与离线使用说明</h2>
+          </div>
+          <p data-i18n="supportPage.s2P1">拾词贴基于设备端本地离线 AI 模型。前往「设置 → 本地 AI 模型中心」即可下载并在本机完成校验与就绪预热。首次下载需要网络连接与足够的可用存储空间。</p>
+          <p data-i18n="supportPage.s2P2">模型状态显示为「已就绪」后，可使用本地模型生成词条内容、场景短文和复习讲解。若遇到下载中断，可在模型中心查看状态并重试。</p>
+        </article>
+
+        <article class="legal-card">
+          <div class="legal-card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+            </svg>
+            <h2 data-i18n="supportPage.s3Title">3. 如何联动「灵感树洞」以及备份恢复数据？</h2>
+          </div>
+          <p data-i18n="supportPage.s3P1">在任意场景详情页生成场景短文后，点击「发送到灵感树洞」，即可将当前场景图与多词串联短文一键带入灵感树洞 (InspirationDraft) 继续写成日常随笔。</p>
+          <p data-i18n="supportPage.s3P2">你可以在「设置 → 备份与恢复」中开启 iCloud Drive 自动备份，或随时导出备份文件并在需要时导入恢复，妥善保存全部照片、贴纸与学习进度。</p>
+        </article>
+
+        <article class="legal-card">
+          <div class="legal-card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 data-i18n="supportPage.s4Title">4. 购买与数据访问</h2>
+          </div>
+          <p data-i18n="supportPage.s4P1">会员方案在 App 内可用时，你可以选择月订阅、年订阅或一次性永久解锁。会员解锁新的本地 AI 生成；已保存的照片词卡、学习与复习、备份和导出继续免费。符合 Apple 试用资格且购买页提供优惠时，月方案可含 7 天试用，年方案可含 1 个月试用；购买确认页会显示适用价格、试用资格和续费金额。</p>
+          <p data-i18n="supportPage.s4P2">订阅由 Apple 处理，可在 Apple ID 的订阅设置中管理或取消；永久解锁为一次性购买。我们不在网站收款，也不会获取你的支付卡信息。若方案暂不可用，你仍可继续查看、学习、复习和导出已有内容。</p>
+        </article>
+
+        <article class="legal-card">
+          <div class="legal-card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <h2 data-i18n="supportPage.s5Title">5. 联系我们</h2>
+          </div>
+          <p>
+            <span data-i18n="supportPage.s5P1">如果以上说明未能解决你的问题，或你有任何功能建议与反馈，欢迎发送邮件至：</span>
+            <a href="mailto:breet.jia@gmail.com">breet.jia@gmail.com</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="icons/app_icon.png" alt="LexiSprig Icon" width="24" height="24">
+        <span data-i18n="footer.copy">拾词贴 LexiSprig · 让外语回到真实生活场景。</span>
+      </div>
+      <div class="footer-links">
+        <a href="support.html" data-i18n="footer.support">应用支持</a>
+        <a href="legal/privacy.html" data-i18n="footer.privacy">隐私政策</a>
+        <a href="legal/terms.html" data-i18n="footer.terms">使用条款</a>
+        <a href="accessibility.html" data-i18n="footer.accessibility">无障碍声明</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

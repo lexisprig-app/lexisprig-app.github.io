@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="2868" viewBox="0 0 1320 2868">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#053D2A"/>
+      <stop offset="52%" stop-color="#082B1E"/>
+      <stop offset="100%" stop-color="#041911"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF3E0"/>
+      <stop offset="100%" stop-color="#EFF6F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1320" height="2868" fill="url(#bg)"/>
+  <circle cx="660" cy="420" r="380" fill="#27AA60" fill-opacity="0.14"/>
+  <rect x="96" y="136" width="1128" height="84" rx="42" fill="#0B3B29" stroke="#27AA60" stroke-opacity="0.45" stroke-width="3"/>
+  <text x="660" y="192" text-anchor="middle" fill="#8CEC90" font-family="-apple-system, PingFang SC, SF Pro Display, sans-serif" font-size="38" font-weight="700">Pain Point 03 · Understand During Review</text>
+  <text x="660" y="340" text-anchor="middle" fill="#FAF3E0" font-family="-apple-system, PingFang SC, SF Pro Display, sans-serif" font-size="76" font-weight="700">Review Explanations &amp; More Examples</text>
+  <text x="660" y="430" text-anchor="middle" fill="#B8D8C4" font-family="-apple-system, PingFang SC, SF Pro Text, sans-serif" font-size="40" font-weight="500">Understand key phrases in context · Generate examples when useful</text>
+
+  <!-- Phone Mockup Card Surface -->
+  <rect x="110" y="540" width="1100" height="1960" rx="72" fill="#0A291D" stroke="#27AA60" stroke-opacity="0.4" stroke-width="4"/>
+  <rect x="166" y="620" width="988" height="680" rx="48" fill="url(#card)"/>
+  <rect x="220" y="680" width="260" height="58" rx="29" fill="#053D2A"/>
+  <text x="350" y="720" text-anchor="middle" fill="#8CEC90" font-family="-apple-system, PingFang SC, SF Pro Text, sans-serif" font-size="28" font-weight="700">LexiSprig · 03</text>
+  <text x="220" y="850" fill="#053D2A" font-family="-apple-system, PingFang SC, SF Pro Display, sans-serif" font-size="52" font-weight="700">Understand the answer in context</text>
+  <text x="220" y="940" fill="#2C5443" font-family="-apple-system, PingFang SC, SF Pro Text, sans-serif" font-size="36" font-weight="500">See the translation, explanation, and more examples</text>
+
+  <!-- Language / Feature Pills inside Mockup -->
+  <rect x="220" y="1040" width="280" height="72" rx="36" fill="#053D2A" fill-opacity="0.1"/>
+  <text x="360" y="1088" text-anchor="middle" fill="#053D2A" font-family="-apple-system, PingFang SC, SF Pro Text, sans-serif" font-size="30" font-weight="600">Sentence Explanation</text>
+
+  <rect x="524" y="1040" width="280" height="72" rx="36" fill="#053D2A" fill-opacity="0.1"/>
+  <text x="664" y="1088" text-anchor="middle" fill="#053D2A" font-family="-apple-system, PingFang SC, SF Pro Text, sans-serif" font-size="30" font-weight="600">Example Translation</text>
+
+  <rect x="828" y="1040" width="270" height="72" rx="36" fill="#053D2A" fill-opacity="0.1"/>
+  <text x="963" y="1088" text-anchor="middle" fill="#053D2A" font-family="-apple-system, PingFang SC, SF Pro Text, sans-serif" font-size="30" font-weight="600">Read Aloud</text>
+
+  <!-- Secondary Card Preview -->
+  <rect x="166" y="1360" width="988" height="480" rx="44" fill="#103828" stroke="#27AA60" stroke-opacity="0.35" stroke-width="3"/>
+  <circle cx="266" cy="1480" r="42" fill="#27AA60" fill-opacity="0.25"/>
+  <path d="M248 1480 L262 1494 L288 1466" fill="none" stroke="#8CEC90" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="340" y="1444" width="680" height="32" rx="16" fill="#8CEC90" fill-opacity="0.32"/>
+  <rect x="340" y="1504" width="520" height="26" rx="13" fill="#FAF3E0" fill-opacity="0.22"/>
+  <rect x="226" y="1600" width="868" height="160" rx="28" fill="#082419"/>
+  <text x="660" y="1695" text-anchor="middle" fill="#8CEC90" font-family="-apple-system, PingFang SC, SF Pro Text, sans-serif" font-size="36" font-weight="600">Reserved Screenshot Slot 03</text>
+
+  <!-- Bottom Slot Indicator -->
+  <rect x="166" y="1900" width="988" height="480" rx="44" fill="#0E3123" stroke="#FAF3E0" stroke-opacity="0.18" stroke-width="2"/>
+  <text x="660" y="2110" text-anchor="middle" fill="#FAF3E0" font-family="-apple-system, PingFang SC, SF Pro Display, sans-serif" font-size="54" font-weight="700">iphone-6.9-03.png</text>
+  <text x="660" y="2195" text-anchor="middle" fill="#9BC4AE" font-family="-apple-system, PingFang SC, SF Pro Text, sans-serif" font-size="34">1320 × 2868 · Ready for drop-in App Store screenshot replacement</text>
+</svg>

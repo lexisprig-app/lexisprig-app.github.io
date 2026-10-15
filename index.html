@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>拾词贴 LexiSprig — 把外语放回真实生活，看见就能说出口</title>
+  <meta name="description" content="拍下眼前的生活场景，把照片中的事物变成多语词卡和场景短文，在真实语境里积累表达。">
+  <meta property="og:title" content="拾词贴 LexiSprig — 把外语放回真实生活，看见就能说出口">
+  <meta property="og:description" content="拍下眼前的生活场景，把照片中的事物变成多语词卡和场景短文，在真实语境里积累表达。">
+  <meta property="og:image" content="icons/app_icon.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="home" data-asset-prefix="">
+  <nav class="navbar" id="site-nav">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-link">
+        <img src="icons/app_icon.png" alt="LexiSprig Icon" class="brand-icon" width="36" height="36">
+        <span class="brand-text">
+          <span class="brand-title" data-i18n="nav.brand">拾词贴 LexiSprig</span>
+          <span class="brand-Tagline" data-i18n="nav.tagline">眼见即所得的多语实景词汇本</span>
+        </span>
+      </a>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav-menu" aria-label="打开导航菜单">
+        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="nav-menu" id="site-nav-menu">
+        <ul class="nav-links">
+          <li><a href="#pain-3" data-i18n="nav.pain3">开口表达</a></li>
+          <li><a href="#pain-2" data-i18n="nav.pain2">生活话题</a></li>
+          <li><a href="#pain-1" data-i18n="nav.pain1">一景多语</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">界面预览</a></li>
+          <li><a href="support.html" data-i18n="nav.support">应用支持</a></li>
+          <li><a href="legal/privacy.html" data-i18n="nav.privacy">隐私政策</a></li>
+          <li><a href="legal/terms.html" data-i18n="nav.terms">使用条款</a></li>
+        </ul>
+        <div class="locale-switcher" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-switch is-active" data-set-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" class="lang-switch" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <div class="container">
+      <header class="hero">
+        <div class="hero-copy">
+          <div class="hero-brand-head">
+            <img src="icons/app_icon.png" alt="拾词贴 LexiSprig App Icon" class="hero-app-icon" width="88" height="88">
+            <div class="hero-brand-meta">
+              <div class="section-kicker">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                </svg>
+                <span data-i18n="hero.kicker">iPhone 实景多语学习 · 基于离线 AI</span>
+              </div>
+              <p class="hero-app-name" data-i18n="nav.brand">拾词贴 LexiSprig</p>
+            </div>
+          </div>
+          <h1 class="hero-title" data-i18n="hero.title">把外语放回真实生活，<br><span class="accent-text">看见就能说出口。</span></h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            拍下眼前的生活场景，把照片中的事物变成多语词卡和场景短文，在真实语境里积累表达。
+          </p>
+          <div class="hero-actions">
+            <a href="#pain-3" class="btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.08-.46-2.07-.48-3.21 0-1.42.61-2.17.43-3.02-.35C2.93 15.33 3.64 7.8 9.1 7.52c1.33.07 2.25.73 3.02.78 1.15-.23 2.25-.89 3.5-.84 1.5.12 2.63.71 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.43 3.89ZM12.03 7.44c-.15-2.23 1.66-4.07 3.74-4.24.29 2.58-2.34 4.5-3.74 4.24Z"></path>
+              </svg>
+              <span data-i18n="hero.primaryBtn">App Store 即将推出</span>
+            </a>
+            <a href="#pain-3" class="btn-secondary">
+              <span data-i18n="hero.secondaryBtn">看看是不是你的日常困扰</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="hero-pills">
+            <span class="hero-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span data-i18n="hero.pill1">实景词卡 + 场景短文 + 例句讲解</span>
+            </span>
+            <span class="hero-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                <circle cx="12" cy="13" r="3"></circle>
+              </svg>
+              <span data-i18n="hero.pill2">实物贴纸入库 · 联动灵感树洞</span>
+            </span>
+            <span class="hero-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span data-i18n="hero.pill3">英 / 日 / 中同景对照 · 独立记忆曲线</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="screenshot-slot">
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder" data-screenshot="1" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+            </div>
+            <figcaption class="screenshot-caption" data-i18n="gallery.cap1">01 · 实景拍照与主体贴纸入词</figcaption>
+          </figure>
+        </div>
+      </header>
+
+      <!-- 3 -> 2 -> 1 Pain Point Summary Cards -->
+      <section class="pain-strip" aria-label="Core user pain points in 3-2-1 priority order">
+        <a href="#pain-3" class="pain-card">
+          <div class="pain-card-top">
+            <span class="pain-badge" data-i18n="strip.p3Badge">「一离开书本，我就不知道怎么开口」</span>
+            <span class="pain-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+              </svg>
+            </span>
+          </div>
+          <h2 data-i18n="strip.p3Title">离开书本，你也知道眼前的一切怎么表达</h2>
+          <p data-i18n="strip.p3Desc">拍下身边的画面，立刻看到地道例句与多词串联的场景短文；复习答题后还能随时看句子讲解、译文与更多例句。</p>
+        </a>
+
+        <a href="#pain-2" class="pain-card">
+          <div class="pain-card-top">
+            <span class="pain-badge" data-i18n="strip.p2Badge">「背了很多词，聊天时却依然没话题」</span>
+            <span class="pain-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </span>
+          </div>
+          <h2 data-i18n="strip.p2Title">把你的日常变成词卡，和人交流自带话题</h2>
+          <p data-i18n="strip.p2Desc">随手拍下早餐、街景与桌边小物，自动抠出透明贴纸，还能一键把场景图与短文送入灵感树洞写下你的故事。</p>
+        </a>
+
+        <a href="#pain-1" class="pain-card">
+          <div class="pain-card-top">
+            <span class="pain-badge" data-i18n="strip.p1Badge">「同时学两门外语，每天在几个 App 间来回切」</span>
+            <span class="pain-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m5 8 6 6"></path>
+                <path d="m4 14 6-6 2-3"></path>
+                <path d="M2 5h12"></path>
+                <path d="M7 2h1"></path>
+                <path d="m22 22-5-10-5 10"></path>
+                <path d="M14 18h6"></path>
+              </svg>
+            </span>
+          </div>
+          <h2 data-i18n="strip.p1Title">同一场景同步学多语，不用再切来切去</h2>
+          <p data-i18n="strip.p1Desc">多选你想学的语种、单选你最习惯的解释语种，在一张照片里同时掌握英、日、中表达，各自拥有独立记忆曲线。</p>
+        </a>
+      </section>
+    </div>
+
+    <!-- Section 1 (Pain Point 3 - First in 3-2-1 Order): Understand Vocabulary in Context -->
+    <section id="pain-3" class="narrative-section">
+      <div class="container">
+        <div class="narrative-grid">
+          <div class="feature-copy">
+            <div class="section-kicker">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+              </svg>
+              <span data-i18n="section3.kicker">你是否也常觉得：外语留在书本里，一回到生活就不知道怎么表达？</span>
+            </div>
+          <h2 data-i18n="section3.title">离开书本，你也知道眼前的一切怎么说、怎么练</h2>
+            <p class="feature-lead" data-i18n="section3.lead">
+              别再死记孤立的考纲词表了。从你每天置身的生活画面出发，听例句、读短文、看解析，把「书本上的词」真正变成「你嘴边的表达」：
+            </p>
+            <ul class="feature-points">
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section3.point1Title">地道例句与发音跟读</strong>
+                  <span data-i18n="section3.point1Desc">每个词条均配备贴合当前画面的自然例句与语音朗读，让你先听懂地道语感。</span>
+                </div>
+              </li>
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section3.point2Title">多词串联「场景短文」（目标词下划线高亮）</strong>
+                  <span data-i18n="section3.point2Desc">自动将同一张照片里的多个词汇编织成一段生活化短文，直观理解词与词在真实语境中的搭配。</span>
+                </div>
+              </li>
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section3.point3Title">复习答题后的句子讲解</strong>
+                  <span data-i18n="section3.point3Desc">查看例句译文和重点说明，理解关键词组在当前句子中的含义。</span>
+                </div>
+              </li>
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section3.point4Title">按需生成更多例句</strong>
+                  <span data-i18n="section3.point4Desc">在答案解析中生成并朗读更多例句，结合上下文巩固词语用法。</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature-visuals">
+            <figure class="screenshot-slot">
+              <div class="screenshot-frame">
+                <div class="screenshot-placeholder" data-screenshot="2" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+              </div>
+              <figcaption class="screenshot-caption" data-i18n="gallery.cap2">02 · 场景短文与目标词高亮</figcaption>
+            </figure>
+            <figure class="screenshot-slot">
+              <div class="screenshot-frame">
+                <div class="screenshot-placeholder" data-screenshot="3" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+              </div>
+              <figcaption class="screenshot-caption" data-i18n="gallery.cap3">03 · 复习答案解析与例句</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 (Pain Point 2 - Second in 3-2-1 Order): Real Life Into Conversation Topics -->
+    <section id="pain-2" class="narrative-section is-reversed">
+      <div class="container">
+        <div class="narrative-grid">
+          <div class="feature-copy">
+            <div class="section-kicker">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                <circle cx="12" cy="13" r="3"></circle>
+              </svg>
+              <span data-i18n="section2.kicker">你是否也有同感：背过再多单词表，和人交流时还是找不到话题？</span>
+            </div>
+            <h2 data-i18n="section2.title">把你的日常拍进词库，和别人聊天自然有话可聊</h2>
+            <p class="feature-lead" data-i18n="section2.lead">
+              最好的外语素材不在考卷里，而在你每天喝的咖啡、逛的街角和喜爱的器物中。用你自己的生活学外语，每次开口都有真实故事可讲：
+            </p>
+            <ul class="feature-points">
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section2.point1Title">实景拍照与 Vision 主体贴纸抠图</strong>
+                  <span data-i18n="section2.point1Desc">对准眼前物品一拍，自动识别视觉主体并生成带柔和描边的透明贴纸词卡，还原手账般的收集乐趣。</span>
+                </div>
+              </li>
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section2.point2Title">围绕你真正关心的生活切片建库</strong>
+                  <span data-i18n="section2.point2Desc">无论是手冲咖啡器具、露营装备还是旅行菜单，你积累的每一个词都来自亲身经历，开口聊天自然言之有物。</span>
+                </div>
+              </li>
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7"></path>
+                    <path d="M7 7h10v10"></path>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section2.point3Title">一键联动「灵感树洞 (InspirationDraft)」延伸表达</strong>
+                  <span data-i18n="section2.point3Desc">可将场景原图与多词串联短文一键发送至灵感树洞，继续扩写为双语随笔、旅行笔记或社交分享话题。</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature-visuals">
+            <figure class="screenshot-slot">
+              <div class="screenshot-frame">
+                <div class="screenshot-placeholder" data-screenshot="1" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+              </div>
+              <figcaption class="screenshot-caption" data-i18n="gallery.cap1">01 · 实景拍照与主体贴纸入词</figcaption>
+            </figure>
+            <figure class="screenshot-slot">
+              <div class="screenshot-frame">
+                <div class="screenshot-placeholder" data-screenshot="4" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+              </div>
+              <figcaption class="screenshot-caption" data-i18n="gallery.cap4">04 · 一键联动灵感树洞延伸话题</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 (Pain Point 1 - Third in 3-2-1 Order): Multi-Language Sync Without Switching Apps -->
+    <section id="pain-1" class="narrative-section">
+      <div class="container">
+        <div class="narrative-grid">
+          <div class="feature-copy">
+            <div class="section-kicker">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span data-i18n="section1.kicker">同时学几门语言时，你也厌倦了在不同 App 之间来回切换吗？</span>
+            </div>
+            <h2 data-i18n="section1.title">同一个场景同步学多语，你不必再切来切去</h2>
+            <p class="feature-lead" data-i18n="section1.lead">
+              想同时把英语和日语捡起来，却总在不同词典和背词软件里重复折腾？在同一个生活画面里，一次拍下就能同步积累多门语言：
+            </p>
+            <ul class="feature-points">
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="21" x2="4" y2="14"></line>
+                    <line x1="4" y1="10" x2="4" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12" y2="3"></line>
+                    <line x1="20" y1="21" x2="20" y2="16"></line>
+                    <line x1="20" y1="12" x2="20" y2="3"></line>
+                    <line x1="1" y1="14" x2="7" y2="14"></line>
+                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                    <line x1="17" y1="16" x2="23" y2="16"></line>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section1.point1Title">「学习语种（多选）」与「解释语种（单选）」彻底解耦</strong>
+                  <span data-i18n="section1.point1Desc">可同时勾选英语、日语、中文作为学习目标，并指定你最熟悉的单一母语作为释义语言，认知负担更轻。</span>
+                </div>
+              </li>
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="M10 4v4"></path>
+                    <path d="M2 8h20"></path>
+                    <path d="M6 4v4"></path>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section1.point2Title">一景多语并列切换，历史词卡自动补齐</strong>
+                  <span data-i18n="section1.point2Desc">同一张实景图下可直接横向切换各语种词条、音标与例句；中途新增学习语种后，旧卡片也会自动补齐新语种内容。</span>
+                </div>
+              </li>
+              <li>
+                <span class="point-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                </span>
+                <div class="point-body">
+                  <strong data-i18n="section1.point3Title">三阶段渐进复习与语种独立 FSRS 记忆曲线</strong>
+                  <span data-i18n="section1.point3Desc">通过「带图巩固 → 打乱检阅 → 藏图盲测」逐步脱离画面提示；每个语种独立计算记忆衰减曲线与复习排程，互不干扰。</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature-visuals">
+            <figure class="screenshot-slot">
+              <div class="screenshot-frame">
+                <div class="screenshot-placeholder" data-screenshot="5" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+              </div>
+              <figcaption class="screenshot-caption" data-i18n="gallery.cap5">05 · 英日中同景对照与语种解耦</figcaption>
+            </figure>
+            <figure class="screenshot-slot">
+              <div class="screenshot-frame">
+                <div class="screenshot-placeholder" data-screenshot="6" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+              </div>
+              <figcaption class="screenshot-caption" data-i18n="gallery.cap6">06 · 三阶复习与语种独立记忆曲线</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All 6 Reserved Screenshot Slots Overview -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+            <span data-i18n="gallery.kicker">真实界面预览 · 你的日常如何变成多语表达</span>
+          </div>
+          <h2 data-i18n="gallery.title">从随手一拍到自然开口的每一步</h2>
+          <p data-i18n="gallery.subtitle">六个核心画面，陪你把眼前的生活一步步变成能听、能读、能聊的多语词库。</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="screenshot-slot">
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder" data-screenshot="1" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+            </div>
+            <figcaption class="screenshot-caption" data-i18n="gallery.cap1">01 · 实景拍照与主体贴纸入词</figcaption>
+          </figure>
+          <figure class="screenshot-slot">
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder" data-screenshot="2" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+            </div>
+            <figcaption class="screenshot-caption" data-i18n="gallery.cap2">02 · 场景短文与目标词高亮</figcaption>
+          </figure>
+          <figure class="screenshot-slot">
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder" data-screenshot="3" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+            </div>
+            <figcaption class="screenshot-caption" data-i18n="gallery.cap3">03 · 复习答案解析与例句</figcaption>
+          </figure>
+          <figure class="screenshot-slot">
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder" data-screenshot="4" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+            </div>
+            <figcaption class="screenshot-caption" data-i18n="gallery.cap4">04 · 一键联动灵感树洞延伸话题</figcaption>
+          </figure>
+          <figure class="screenshot-slot">
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder" data-screenshot="5" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+            </div>
+            <figcaption class="screenshot-caption" data-i18n="gallery.cap5">05 · 英日中同景对照与语种解耦</figcaption>
+          </figure>
+          <figure class="screenshot-slot">
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder" data-screenshot="6" role="img" aria-label="真实 App 截图待补充">真实 App 截图待补充</div>
+            </div>
+            <figcaption class="screenshot-caption" data-i18n="gallery.cap6">06 · 三阶复习与语种独立记忆曲线</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy, Backup & Data Ownership Section -->
+    <section class="trust-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span data-i18n="trust.kicker">本地学习 · 数据由你管理</span>
+          </div>
+          <h2 data-i18n="trust.title">在自己的生活场景中积累多语词汇</h2>
+          <p data-i18n="trust.subtitle">无需注册账号。所有照片、语音与 AI 数据处理均在设备本地完成，词卡与学习记录完全由你掌控。</p>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card">
+            <div class="trust-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <h3 data-i18n="trust.card1Title">所有数据处理均在本地</h3>
+            <p data-i18n="trust.card1Desc">词条生成、场景短文、语音与图像识别等全部数据处理均在你的 iPhone 本地离线运行（仅在首次下载模型时使用网络）。</p>
+          </article>
+
+          <article class="trust-card">
+            <div class="trust-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+              </svg>
+            </div>
+            <h3 data-i18n="trust.card2Title">iCloud 备份与便捷导入导出</h3>
+            <p data-i18n="trust.card2Desc">支持同步至你个人的 iCloud Drive，也可随时将照片、贴纸与学习记录完整导出或导入恢复，换机与迁移轻松安心。</p>
+          </article>
+
+          <article class="trust-card">
+            <div class="trust-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 data-i18n="trust.card3Title">学习成果留在你手中</h3>
+            <p data-i18n="trust.card3Desc">照片、词卡和复习记录保存在你的设备与个人备份中，可继续查看、复习和导出。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="icons/app_icon.png" alt="LexiSprig Icon" width="24" height="24">
+        <span data-i18n="footer.copy">拾词贴 LexiSprig · 让外语回到真实生活场景。</span>
+      </div>
+      <div class="footer-links">
+        <a href="support.html" data-i18n="footer.support">应用支持</a>
+        <a href="legal/privacy.html" data-i18n="footer.privacy">隐私政策</a>
+        <a href="legal/terms.html" data-i18n="footer.terms">使用条款</a>
+        <a href="accessibility.html" data-i18n="footer.accessibility">无障碍声明</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
