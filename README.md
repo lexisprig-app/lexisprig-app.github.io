@@ -4,11 +4,11 @@ Standalone GitHub Pages repository for **LexiSprig / 拾词贴** (`com.luckyxmob
 
 ## Structure
 
-- `index.html`: Bilingual landing page structured in **3 → 2 → 1** user-value order (`#pain-3` Understand Vocabulary in Context → `#pain-2` Real Life Into Topics → `#pain-1` Multi-Language Without Switching Apps) and 6 reserved screenshot slots. The visible slots remain placeholders until replaced with genuine captures from the review-candidate build.
+- `index.html`: Bilingual landing page structured in **3 → 2 → 1** user-value order (`#pain-3` Understand Vocabulary in Context → `#pain-2` Real Life Into Topics → `#pain-1` Multi-Language Without Switching Apps), a membership comparison/pricing section, and 6 reserved screenshot slots. The visible slots remain placeholders until replaced with genuine captures from the review-candidate build.
 - `support.html`: Bilingual App Support & FAQ page.
 - `accessibility.html`: Bilingual Accessibility statement.
 - `legal/privacy.html`: Bilingual Privacy Policy.
-- `legal/terms.html`: Bilingual Terms of Use / Apple Standard EULA, including in-app membership, trials, auto-renewal, lifetime purchases, and the continued free access to saved learning data. Publish only after the terms match the live App Store Connect products and offers.
+- `legal/terms.html`: Bilingual Terms of Use / Apple Standard EULA, including configured China/U.S. reference prices, localized storefront pricing, introductory-offer eligibility, same-subscription-group trial limit, auto-renewal/cancellation, lifetime purchases, and continued access to saved learning data.
 - `css/style.css`: Responsive stylesheet with separated Chinese (`html[data-lang="zh"]`) and English (`html[data-lang="en"]`) typography and mobile hamburger navigation (`#nav-toggle` / `#site-nav-menu`).
 - `js/main.js`: Automatic browser language detection (`zh-Hans` / `en`), manual language switcher with `localStorage` persistence, and localized labels for the pending screenshot slots.
 - `icons/`: Current LexiSprig app icon assets (`AppIcon_Default.svg`, `app_icon.png`) plus root `apple-touch-icon.png`, `favicon-32x32.png`, and `favicon-16x16.png`.
@@ -20,3 +20,5 @@ Standalone GitHub Pages repository for **LexiSprig / 拾词贴** (`com.luckyxmob
 ```bash
 node scripts/validate-site.mjs
 ```
+
+Membership pricing on the public site reflects the currently configured mainland China and U.S. App Store Connect reference prices. The App Store purchase sheet remains authoritative for the customer's local price, eligibility, tax, and renewal details. Update the site when prices or offers change.

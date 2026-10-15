@@ -96,8 +96,9 @@
             </svg>
             <h2 data-i18n="privacyPage.s2Title">2. 设备端处理与所用服务</h2>
           </div>
-          <p data-i18n="privacyPage.s2P1">词条内容、场景短文和复习讲解使用设备端 E4B 模型；图片识别、翻译与语音功能使用 Apple 系统框架，具体能力和资源要求取决于设备与系统支持。下载模型或系统语言资源、使用 iCloud 备份及通过 App Store 购买或恢复会员时，应用会连接相应服务。</p>
+          <p data-i18n="privacyPage.s2P1">词条内容、场景短文和复习讲解使用设备端 E4B 模型。首次下载模型时，App 会按地区与可用性从 Cloudflare R2、Hugging Face（含镜像）或 ModelScope 获取模型文件；托管服务会收到下载所需的常规网络请求信息，例如 IP 地址和所请求的资源。下载模型不会上传你的照片、词卡或学习记录，服务商按各自隐私政策处理请求信息。图片识别、翻译与语音功能使用 Apple 系统框架，具体能力和资源要求取决于设备与系统支持；系统语言资源、iCloud 备份及 App Store 购买或恢复也会连接相应 Apple 服务。</p>
           <p data-i18n="privacyPage.s2P2">我们不运营用于推理或分析你的照片、语音、词卡和学习内容的开发者后端。若你开启 iCloud 备份或主动分享内容，所选数据会传送到你选择的 Apple iCloud 账户或灵感树洞 App，以完成该功能。</p>
+          <p data-i18n="privacyPage.s2P3">为排查生成故障，App 会在设备本地保存有容量上限的诊断事件日志，记录操作/词卡标识、处理阶段、模型与语种、照片尺寸和大小、响应长度及错误类别；不记录照片内容、提示词或模型回复正文，也不会自动上传给开发者。日志随 App 本机数据一并移除。</p>
         </article>
 
         <article class="legal-card">
@@ -108,7 +109,8 @@
             <h2 data-i18n="privacyPage.s3Title">3. iCloud 备份与本地导入导出</h2>
           </div>
           <p data-i18n="privacyPage.s3P1">如果你启用 iCloud 备份，场景图片、词汇数据与学习进度会备份到你个人 iCloud 账户的应用私有空间。开发者无法读取该私有备份；存储与账户由 Apple 提供并受 Apple 隐私政策约束。</p>
-          <p data-i18n="privacyPage.s3P2">导出或导入备份由你选择文件位置；将场景发送至「灵感树洞 (InspirationDraft)」时，你选择的照片和短文会交给该 App 创建灵感草稿。</p>
+          <p data-i18n="privacyPage.s3P2">导出或导入备份由你选择文件位置；将场景分享到「灵感树洞 (InspirationDraft)」时，你选择的照片和短文会交给该 App 创建灵感草稿。</p>
+          <p data-i18n="privacyPage.s3P3">本地词卡、照片和学习资料会保留在设备上，直到你删除相关词卡或移除 App 本机数据；删除词卡会移除卡片与相应复习进度，已记录的历史活动可能仍保留在统计中。关闭自动备份只会停止后续快照，不会删除已有 iCloud 备份；你可以在「查看 iCloud 备份」中查看它们，并在系统“文件”App 的 iCloud Drive → Documents → LexiSprig → Backups 中删除备份文件。移除 App 不会自动删除 iCloud 中的备份。</p>
         </article>
 
         <article class="legal-card">

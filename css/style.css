@@ -686,6 +686,131 @@ html[data-lang="en"] .legal-card p {
   border-top: 1px solid var(--ls-border);
 }
 
+/* ========================================================================
+   Membership & Pricing
+   ======================================================================== */
+
+.membership-section {
+  padding: 4.5rem 0;
+  border-top: 1px solid var(--ls-border);
+}
+
+.membership-benefits,
+.membership-plans {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.membership-benefits {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 1.1rem;
+}
+
+.membership-benefit-card,
+.membership-plan-card {
+  position: relative;
+  background: var(--ls-surface);
+  border: 1px solid var(--ls-border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: var(--ls-shadow-card);
+}
+
+.membership-benefit-premium,
+.membership-plan-featured {
+  border-color: var(--ls-accent-border);
+  background: linear-gradient(145deg, var(--ls-surface), var(--ls-surface-soft));
+}
+
+.membership-tier-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.membership-benefit-card h3,
+.membership-plan-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.membership-price {
+  color: var(--ls-accent);
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.membership-badge,
+.membership-plan-label {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  color: var(--ls-accent);
+  background: var(--ls-accent-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.membership-tier-caption {
+  margin: 0.35rem 0 0.85rem;
+  color: var(--ls-text-secondary);
+}
+
+.membership-benefit-card ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--ls-text-secondary);
+}
+
+.membership-plan-card {
+  padding: 1.4rem;
+}
+
+.membership-plan-card h3 {
+  margin: 0.25rem 0 0.55rem;
+}
+
+.membership-plan-card p {
+  margin: 0.6rem 0 0;
+  color: var(--ls-text-secondary);
+  font-size: 0.94rem;
+}
+
+.membership-plan-price {
+  color: var(--ls-text-primary) !important;
+  font-size: 1.08rem !important;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.membership-plan-label {
+  margin-bottom: 0.15rem;
+}
+
+.membership-saving {
+  color: var(--ls-accent) !important;
+  font-weight: 650;
+}
+
+.membership-plan-detail {
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--ls-border);
+  font-size: 0.87rem !important;
+}
+
+.membership-disclaimer {
+  max-width: 920px;
+  margin: 1.2rem auto 0;
+  color: var(--ls-text-muted);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
 .section-header {
   text-align: center;
   max-width: 720px;
@@ -966,7 +1091,12 @@ html[data-lang="en"] .legal-card p {
   }
 
   .pain-strip,
-  .trust-grid {
+  .trust-grid,
+  .membership-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .membership-benefits {
     grid-template-columns: 1fr;
   }
 
