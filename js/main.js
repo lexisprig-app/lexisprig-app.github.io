@@ -78,11 +78,11 @@ const translations = {
       kicker: "主要学习场景",
       title: "从随手一拍到自然开口的每一步",
       subtitle: "五个核心画面，陪你把眼前的生活一步步变成能听、能读、能聊的多语词库。",
-      cap1: "01 · 实景拍照与主体贴纸入词",
+      cap1: "01 · 词库主界面",
       cap2: "02 · 场景短文与目标词高亮",
       cap3: "03 · 复习答案解析与例句",
-      cap4: "04 · 英日中同景词卡",
-      cap5: "05 · 复习进度与记忆曲线"
+      cap4: "04 · 同一场景的多语词卡",
+      cap5: "05 · 复习主界面"
     },
     trust: {
       kicker: "设备端 AI · 数据由你管理",
@@ -282,11 +282,11 @@ const translations = {
       kicker: "Key Learning Moments",
       title: "Every Step From a Quick Snap to Confident Expression",
       subtitle: "Five core screens that turn what you see every day into a multilingual library you can hear, read, and talk about.",
-      cap1: "01 · Real-Life Capture & Sticker Cutout",
+      cap1: "01 · Vocabulary Library",
       cap2: "02 · Scene Passage with Highlighted Words",
       cap3: "03 · Review Explanations & Examples",
-      cap4: "04 · English, Japanese & Chinese Cards",
-      cap5: "05 · Review Progress & Memory Curve"
+      cap4: "04 · Multilingual Cards from One Scene",
+      cap5: "05 · Review Dashboard"
     },
     trust: {
       kicker: "On-Device AI · Your Library, Your Control",
@@ -464,18 +464,18 @@ const pageMeta = {
 
 const screenshotAlts = {
   zh: {
-    1: "实景照片生成的多语词卡",
+    1: "词库主界面，展示实景词卡",
     2: "场景短文与目标词高亮",
     3: "复习答案反馈与例句解析",
-    4: "同一场景中的英语、日语与中文词卡",
-    5: "复习进度与记忆曲线"
+    4: "同一场景中的多语词卡与释义",
+    5: "复习主界面，展示学习与复习进度"
   },
   en: {
-    1: "Real-life photo turned into multilingual vocabulary cards",
+    1: "Vocabulary library with real-life vocabulary cards",
     2: "A scene story with highlighted target words",
     3: "Review answer feedback and sentence explanation",
-    4: "English, Japanese, and Chinese vocabulary from one scene",
-    5: "Review progress and memory curve"
+    4: "Multilingual vocabulary cards and meanings from one scene",
+    5: "Review dashboard showing learning and review progress"
   }
 };
 
