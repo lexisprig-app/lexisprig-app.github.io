@@ -49,6 +49,21 @@ for (const locale of ['zh-Hans', 'en']) {
   }
 }
 
+// Verify all five website screenshot assets are present and are full-size PNG captures.
+for (const locale of ['zh-Hans', 'en']) {
+  for (let i = 1; i <= 5; i++) {
+    const slot = String(i).padStart(2, '0');
+    const pngRel = `assets/screenshots/${locale}/${slot}.png`;
+    const pngFull = path.join(rootDir, pngRel);
+    assert(fs.existsSync(pngFull), `Missing website screenshot: ${pngRel}`);
+    const image = fs.readFileSync(pngFull);
+    assert(image.length > 100_000, `Website screenshot is too small to be a full-size capture: ${pngRel}`);
+    assert(image.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10])), `Invalid PNG file: ${pngRel}`);
+    assert(image.readUInt32BE(16) === 1320 && image.readUInt32BE(20) === 2868,
+      `Website screenshot must be 1320x2868: ${pngRel}`);
+  }
+}
+
 // 2. Verify zero Emoji across HTML, CSS, and JS (Constraint 4)
 const textFiles = [
   'index.html',
@@ -68,14 +83,14 @@ for (const rel of textFiles) {
   assert(!matches, `Found forbidden Emoji in ${rel}: ${matches ? matches.join(', ') : ''}`);
 }
 
-// 3. Verify 3 -> 2 -> 1 Pain Point ordering and 6 screenshot slots in index.html
+// 3. Verify 3 -> 2 -> 1 Pain Point ordering and 5 screenshot slots in index.html
 const indexHtml = readText('index.html');
 const idxPain3 = indexHtml.indexOf('id="pain-3"');
 const idxPain2 = indexHtml.indexOf('id="pain-2"');
 const idxPain1 = indexHtml.indexOf('id="pain-1"');
 assert(idxPain3 > 0 && idxPain2 > idxPain3 && idxPain1 > idxPain2, 'Pain points in index.html must appear in strict 3 -> 2 -> 1 order (#pain-3 -> #pain-2 -> #pain-1)');
 
-for (let slot = 1; slot <= 6; slot++) {
+for (let slot = 1; slot <= 5; slot++) {
   assert(
     indexHtml.includes(`data-screenshot="${slot}"`),
     `index.html is missing [data-screenshot="${slot}"]`
@@ -139,6 +154,7 @@ for (const key of allDataI18nKeys) {
 console.log(`ALL CHECKS PASSED:
 - ${requiredFiles.length} core files & icons verified
 - 12 bilingual screenshot placeholders (zh-Hans & en, 01..06) verified
+- 10 full-size website screenshots (zh-Hans & en, 01..05) verified
 - Zero Emoji characters across all ${textFiles.length} source files
 - 3 -> 2 -> 1 pain point order verified in index.html
 - ${allDataI18nKeys.size} data-i18n keys verified in both zh and en dictionaries`);

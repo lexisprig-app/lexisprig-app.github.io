@@ -75,58 +75,57 @@ const translations = {
       point3Desc: "通过「带图巩固 → 打乱检阅 → 藏图盲测」逐步脱离画面提示；每个语种独立计算记忆衰减曲线与复习排程，互不干扰。"
     },
     gallery: {
-      kicker: "界面截图准备中 · 了解主要学习场景",
+      kicker: "主要学习场景",
       title: "从随手一拍到自然开口的每一步",
-      subtitle: "六个核心画面，陪你把眼前的生活一步步变成能听、能读、能聊的多语词库。",
+      subtitle: "五个核心画面，陪你把眼前的生活一步步变成能听、能读、能聊的多语词库。",
       cap1: "01 · 实景拍照与主体贴纸入词",
       cap2: "02 · 场景短文与目标词高亮",
       cap3: "03 · 复习答案解析与例句",
-      cap4: "04 · 一键联动灵感树洞延伸话题",
-      cap5: "05 · 英日中同景对照与语种解耦",
-      cap6: "06 · 三阶复习与语种独立记忆曲线"
+      cap4: "04 · 英日中同景词卡",
+      cap5: "05 · 复习进度与记忆曲线"
     },
     trust: {
       kicker: "设备端 AI · 数据由你管理",
       title: "在自己的生活场景中积累多语词汇",
       subtitle: "无需注册账号。照片、词卡与学习记录默认保存在设备本地；你可以按需使用 iCloud 备份或导出。",
       card1Title: "设备端 AI 生成",
-      card1Desc: "词条内容、场景短文和复习讲解由设备端 E4B 模型生成。模型与系统语言资源下载、iCloud 备份和 App Store 购买会连接相应服务。",
+      card1Desc: "高级会员可在会员有效期内不限生成次数使用设备端 E4B，生成词条、场景短文和复习讲解，不按次收费。AI 在本机处理照片，不会把照片上传到 AI 云端服务；照片和词卡默认保存在设备上。模型或系统语言资源下载、iCloud 备份、App Store 购买及主动分享仍会连接相应服务。",
       card2Title: "iCloud 备份与便捷导入导出",
       card2Desc: "可开启 iCloud 自动备份，也可导出完整备份文件并在需要时导入恢复。备份状态取决于 iCloud 账户、网络和可用空间。",
       card3Title: "学习成果留在你手中",
       card3Desc: "照片、词卡和复习记录保存在你的设备与个人备份中，可继续查看和导出。"
     },
     membership: {
-      kicker: "会员计划 · 先开始学习，再按需解锁",
-      title: "基础学习免费开始，复习与新内容由高级会员解锁",
-      lead: "免费用户可以继续整理和学习已保存的词卡；高级会员可使用完整复习，并生成新的本地 AI 学习内容。会员到期后，已保存内容仍可查看和编辑。",
+      kicker: "会员计划 · 免费管理词卡，高级会员解锁学习与复习",
+      title: "已保存词卡免费管理，学习与复习由高级会员解锁",
+      lead: "免费使用仅可管理已保存内容；今日新词学习、复习和新的本地 AI 学习内容由高级会员解锁。会员到期后，已保存内容仍可查看和编辑。",
       freeTitle: "免费使用",
       freePrice: "¥0 / $0",
-      freeCaption: "无需订阅，开始建立自己的词库",
+      freeCaption: "无需订阅，保留和管理已保存词卡",
       free1: "查看、编辑已保存的词卡与生成内容",
-      free2: "学习新词并查看学习记录、复习历史与统计",
+      free2: "查看学习记录、复习历史与统计",
       free3: "使用 iCloud 备份、本地导入和导出",
       premiumTitle: "高级会员",
-      premiumBadge: "完整复习体验",
+      premiumBadge: "完整学习与复习",
       premiumCaption: "包含免费使用的全部能力，另解锁：",
-      premium1: "今日复习、记忆曲线复习与最近错题复习",
+      premium1: "今日新词学习、记忆曲线复习与最近错题复习",
       premium2: "打乱顺序、隐藏照片等进阶复习轮次",
       premium3: "生成新的本地 AI 词条内容、例句与场景短文",
       monthlyTitle: "月度订阅",
-      monthlyPrice: "¥12 / 月 · US$2.99 / month",
+      monthlyPrice: "具体价格以 App Store 购买页面为准",
       monthlyTrial: "符合 Apple 试用资格时，可享 7 天免费试用",
       monthlyTerms: "试用后按月自动续订；可在 Apple 账户设置中取消。",
-      annualBadge: "年付更省",
+      annualBadge: "年度方案",
       annualTitle: "年度订阅",
-      annualPrice: "¥68 / 年 · US$14.99 / year",
+      annualPrice: "具体价格以 App Store 购买页面为准",
       annualTrial: "符合 Apple 试用资格时，可享 1 个月免费试用",
-      annualSaving: "按当前中美基准价，分别比按月续费约省 ¥76/年或 US$20.89/年。",
+      annualSaving: "年付优惠与试用资格以 App Store 购买页面为准。",
       annualTerms: "试用后按年自动续订；可在 Apple 账户设置中取消。",
       lifetimeTitle: "永久解锁",
-      lifetimePrice: "¥168 · US$39.99 一次性",
+      lifetimePrice: "一次性价格以 App Store 购买页面为准",
       lifetimeDesc: "一次购买，永久解锁高级会员权益",
       lifetimeTerms: "一次性付款，不会自动续费。",
-      disclaimer: "价格为中国大陆与美国当前配置的参考价，其他地区由 App Store 本地化显示。购买前会显示当地价格、试用资格和续订条件；月度与年度方案属于同一订阅组，每位用户只能兑换一次 Apple 提供的订阅试用优惠。网站不提供购买或网页结账。"
+      disclaimer: "价格因 App Store 国家或地区而异。购买前，App Store 会显示适用于你账户的本地价格、税费、试用资格和续订条件。月度与年度方案属于同一订阅组，每位用户只能兑换一次 Apple 提供的订阅试用优惠。网站不提供购买或网页结账。",
     },
     footer: {
       copy: "拾词贴 LexiSprig · 让外语回到真实生活场景。",
@@ -149,8 +148,8 @@ const translations = {
       s3P1: "在任意场景详情页生成场景短文后，点击「分享到灵感树洞」，即可将当前场景图与多词串联短文带入灵感树洞 (InspirationDraft)，创建草稿并继续编辑。",
       s3P2: "你可以在「设置 → 备份与还原」中开启 iCloud 自动备份，或随时导出备份文件并在需要时导入恢复，妥善保存照片、词卡和学习进度。",
       s4Title: "4. 购买与数据访问",
-      s4P1: "首发会员方案包括月度订阅、年度订阅和永久解锁。中国大陆当前配置价分别为 ¥12/月、¥68/年和 ¥168 一次性；美国为 US$2.99/月、US$14.99/年和 US$39.99 一次性。其他地区以 App Store 本地化价格为准。高级会员解锁今日复习、记忆曲线复习、最近错题复习、进阶轮次和新的本地 AI 学习内容；免费用户可查看编辑已保存词卡、学习新词、查看记录和统计，并备份或导出。",
-      s4P2: "符合 Apple 条件且购买页提供优惠时，月度方案可含 7 天试用，年度方案可含 1 个月试用。两者属于同一订阅组，每位用户只能兑换一次订阅试用优惠；具体资格和价格以购买确认页为准。订阅会自动续费，除非至少在当前周期结束前 24 小时关闭自动续订；可在 Apple 账户设置中管理或取消。永久解锁为一次性购买，不会续费。网站不收款，也不会收到你的支付卡信息。会员到期不会删除已保存内容，但不能开始或继续复习。",
+      s4P1: "首发会员方案包括月度订阅、年度订阅和永久解锁。价格因 App Store 国家或地区而异，具体价格、币种和试用资格以购买前显示为准。高级会员解锁今日新词学习、记忆曲线复习、最近错题复习、进阶轮次和新的本地 AI 学习内容；免费用户可查看、编辑已保存词卡及已有生成内容，查看学习记录、复习历史与统计，并备份或导出，但不能开始新词学习或复习。",
+      s4P2: "符合 Apple 条件且购买页提供优惠时，月度方案可含 7 天试用，年度方案可含 1 个月试用。两者属于同一订阅组，每位用户只能兑换一次订阅试用优惠；具体资格、当地价格和续订条件以购买确认页为准。订阅会自动续费，除非至少在当前周期结束前 24 小时关闭自动续订；可在 Apple 账户设置中管理或取消。永久解锁为一次性购买，不会续费。网站不收款，也不会收到你的支付卡信息。会员到期不会删除已保存内容，但不能开始或继续新词学习或复习。",
       s5Title: "5. 联系我们",
       s5P1: "如果以上说明未能解决你的问题，或你有任何功能建议与反馈，欢迎发送邮件至："
     },
@@ -177,15 +176,15 @@ const translations = {
     termsPage: {
       kicker: "服务协议与许可",
       title: "拾词贴 LexiSprig 使用条款",
-      updated: "最后更新：2026 年 10 月 15 日",
+      updated: "最后更新：2026 年 10 月 16 日",
       s1Title: "1. 条款接受与 Apple 标准最终用户许可协议 (EULA)",
       s1P1: "下载或使用拾词贴（LexiSprig）即表示你同意遵守本使用条款。本应用同时适用 Apple 标准最终用户许可协议（EULA）：",
       eulaLink: "Apple 标准最终用户许可协议（EULA）",
       s2Title: "2. 当前版本与应用内购买",
-      s2P1: "首发方案包括月度订阅、年度订阅和一次性永久解锁。高级会员解锁今日复习、记忆曲线复习、最近错题复习、进阶轮次和新的本地 AI 学习内容。免费用户可查看和编辑已保存词卡、学习新词、查看学习记录与统计，并备份或导出。会员到期不会删除已保存内容，但开始或继续复习需要有效的高级会员权益。购买通过 Apple App Store 完成；本网站不提供结账或收款。",
-      s2P2: "当前配置参考价：中国大陆 ¥12/月、¥68/年、¥168 一次性；美国 US$2.99/月、US$14.99/年、US$39.99 一次性。其他地区由 App Store 显示本地价格。符合 Apple 条件且购买页提供优惠时，月度方案可含 7 天试用，年度方案可含 1 个月试用；两者属于同一订阅组，每位用户只能兑换一次订阅试用优惠。购买前 App Store 会显示价格、税费、试用资格和续订条件。订阅会自动续订，除非至少在当前周期结束前 24 小时关闭自动续订；可在 Apple 账户设置中管理或取消。永久解锁为一次性购买，不会续订。",
+      s2P1: "首发方案包括月度订阅、年度订阅和一次性永久解锁。高级会员解锁今日新词学习、记忆曲线复习、最近错题复习、进阶轮次和新的本地 AI 学习内容。免费用户可查看和编辑已保存词卡及已有生成内容、查看学习与复习记录和统计，并备份或导出；没有有效高级会员时，不能开始或继续新词学习或复习。会员到期不会删除已保存内容。购买通过 Apple App Store 完成；本网站不提供结账或收款。",
+      s2P2: "可选方案包括月度订阅、年度订阅和永久解锁。价格因 App Store 国家或地区而异；具体价格、币种、税费和试用资格以购买前 App Store 显示为准。月度方案符合资格时可含 7 天试用，年度方案可含 1 个月试用。两者属于同一订阅组，每位用户只能兑换一次订阅试用优惠。订阅会自动续订，除非至少在当前周期结束前 24 小时关闭自动续订；可在 Apple 账户设置中管理或取消。永久解锁为一次性购买，不会续订。",
       s3Title: "3. 用户数据与学习成果",
-      s3P1: "你的照片、词卡及学习记录保存在设备本地，并可按你的选择备份或导出。没有有效高级会员时，你仍可查看已有词卡、生成内容、学习记录、复习历史和统计，但不能开始或继续复习。会员到期不会删除或遮挡这些内容和数据。",
+      s3P1: "你的照片、词卡及学习记录保存在设备本地，并可按你的选择备份或导出。没有有效高级会员时，你仍可查看已有词卡、生成内容、学习记录、复习历史和统计，但不能开始或继续新词学习或复习。会员到期不会删除或遮挡这些内容和数据。",
       s4Title: "4. 本地 AI 模型与生成内容免责声明",
       s4P1: "本地 AI 模型下载会占用设备存储空间。AI 生成的词义、例句、场景短文和复习讲解仅供语言学习参考，可能存在不完整或偏差；重要内容请结合可靠词典复核。",
       s5Title: "5. 用户内容权利与联系方式",
@@ -280,58 +279,57 @@ const translations = {
       point3Desc: "Progress through With Photo, Shuffled, and Hidden Photo recall stages. Each language tracks its own retention curve and review schedule independently."
     },
     gallery: {
-      kicker: "Screenshots in preparation · Explore key learning moments",
+      kicker: "Key Learning Moments",
       title: "Every Step From a Quick Snap to Confident Expression",
-      subtitle: "Six core screens that turn what you see every day into a multilingual library you can hear, read, and talk about.",
+      subtitle: "Five core screens that turn what you see every day into a multilingual library you can hear, read, and talk about.",
       cap1: "01 · Real-Life Capture & Sticker Cutout",
       cap2: "02 · Scene Passage with Highlighted Words",
       cap3: "03 · Review Explanations & Examples",
-      cap4: "04 · One-Tap Handoff to InspirationDraft",
-      cap5: "05 · Side-by-Side Multilingual Cards",
-      cap6: "06 · 3-Stage Review & Memory Curve"
+      cap4: "04 · English, Japanese & Chinese Cards",
+      cap5: "05 · Review Progress & Memory Curve"
     },
     trust: {
       kicker: "On-Device AI · Your Library, Your Control",
       title: "Build multilingual vocabulary from the scenes around you",
       subtitle: "No account required. Photos, vocabulary cards, and study records are stored on your device by default. You can choose iCloud backup or export.",
       card1Title: "On-Device AI Generation",
-      card1Desc: "Vocabulary content, Scene Passages, and review explanations are generated by the on-device E4B model. Model and system-language downloads, iCloud backup, and App Store purchases connect to their respective services.",
+      card1Desc: "Premium members can use on-device E4B during their membership without a generation-count limit or per-generation fee to create vocabulary entries, Scene Passages, and review explanations. AI processes photos on your device; photos are not uploaded to an AI cloud service. Photos and cards stay on your device by default. Model or system-language downloads, iCloud backup, App Store purchases, and sharing still connect to the relevant services.",
       card2Title: "iCloud Backup & Easy Export / Import",
       card2Desc: "Enable automatic iCloud backup, or export a complete backup file and import it when needed. Backup status depends on your iCloud account, network, and available storage.",
       card3Title: "Your Learning Progress Stays Yours",
       card3Desc: "Your photos, vocabulary cards, and review history stay in your library and personal backup, where you can view or export them."
     },
     membership: {
-      kicker: "Membership · Start learning, then unlock more when you need it",
-      title: "Start learning for free. Unlock reviews and new content with Premium.",
-      lead: "Free users can organize and learn from saved cards. Premium unlocks full review and new on-device AI learning content. Your saved content remains viewable and editable if membership expires.",
+      kicker: "Membership · Manage saved cards for free; unlock study and review with Premium",
+      title: "Manage saved cards for free. Unlock study and review with Premium.",
+      lead: "Free access lets you manage saved content. Premium unlocks study of new words, review, and new on-device AI content. Saved content remains viewable and editable if membership expires.",
       freeTitle: "Free",
       freePrice: "¥0 / $0",
-      freeCaption: "Build your vocabulary library without a subscription",
+      freeCaption: "Keep and manage saved cards without a subscription",
       free1: "View and edit saved cards and generated content",
-      free2: "Learn new words and view study records, review history, and statistics",
+      free2: "View study records, review history, and statistics",
       free3: "Use iCloud backup and local import/export",
       premiumTitle: "Premium",
-      premiumBadge: "Full review experience",
+      premiumBadge: "Complete study and review",
       premiumCaption: "Includes everything in Free, plus:",
-      premium1: "Daily review, spaced-repetition review, and recent-mistake review",
+      premium1: "Study today's new words, review on schedule, and revisit mistakes",
       premium2: "Advanced rounds with shuffled order or hidden photos",
       premium3: "Generate new on-device AI vocabulary content, examples, and Scene Passages",
       monthlyTitle: "Monthly",
-      monthlyPrice: "¥12 / month · US$2.99 / month",
+      monthlyPrice: "See the localized price in the App Store",
       monthlyTrial: "7-day free trial when offered by Apple and available to you",
       monthlyTerms: "Renews monthly after the trial; manage or cancel in your Apple Account settings.",
-      annualBadge: "Better annual value",
+      annualBadge: "Yearly plan",
       annualTitle: "Yearly",
-      annualPrice: "¥68 / year · US$14.99 / year",
+      annualPrice: "See the localized price in the App Store",
       annualTrial: "1-month free trial when offered by Apple and available to you",
-      annualSaving: "At current China and U.S. reference prices, save about ¥76 or US$20.89 per year compared with 12 monthly payments.",
+      annualSaving: "Annual offers and trial eligibility are shown in the App Store.",
       annualTerms: "Renews yearly after the trial; manage or cancel in your Apple Account settings.",
       lifetimeTitle: "Lifetime unlock",
-      lifetimePrice: "¥168 · US$39.99 one time",
+      lifetimePrice: "See the one-time price in the App Store",
       lifetimeDesc: "Pay once for ongoing Premium access",
       lifetimeTerms: "One-time purchase. No recurring renewal.",
-      disclaimer: "These are current reference prices configured for mainland China and the United States. App Store displays localized prices elsewhere. Before purchase, Apple shows your local price, trial eligibility, and renewal terms. Monthly and yearly plans are in the same subscription group; each customer may redeem only one introductory subscription offer from Apple. This website does not sell memberships or accept payments."
+      disclaimer: "Prices vary by App Store country or region. Before purchase, the App Store shows the localized price, taxes, trial eligibility, and renewal terms that apply to your account. Monthly and yearly plans are in the same subscription group; each customer may redeem only one introductory subscription offer from Apple. This website does not sell memberships or accept payments."
     },
     footer: {
       copy: "LexiSprig · Bring languages back to real-life scenes.",
@@ -354,8 +352,8 @@ const translations = {
       s3P1: "After generating a Scene Passage on a scene detail screen, tap Share to InspirationDraft to create a draft with the photo and passage, then continue editing it there.",
       s3P2: "In Settings → Backup & Restore, you can enable automatic iCloud backups or export a backup file and import it when needed to keep your photos, cards, and study progress safe.",
       s4Title: "4. Purchases & Access to Your Library",
-      s4P1: "Launch plans include a monthly subscription, yearly subscription, and lifetime unlock. Current configured prices are ¥12/month, ¥68/year, and ¥168 one time in mainland China; and US$2.99/month, US$14.99/year, and US$39.99 one time in the United States. App Store displays localized prices elsewhere. Premium unlocks daily and spaced review, recent-mistake review, advanced rounds, and new on-device AI learning content. Free users can view and edit saved cards, learn new words, view study records and statistics, and back up or export their library.",
-      s4P2: "When offered by Apple and available to you, the monthly plan may include a 7-day trial and the yearly plan a 1-month trial. Both plans belong to the same subscription group, so each customer can redeem only one introductory subscription offer. Apple shows your trial eligibility and local price before purchase. Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the current period ends; manage or cancel in your Apple Account settings. Lifetime access is a one-time purchase and does not renew. We do not accept payments on this website or receive your payment card details. Saved content remains available after membership expires, but you cannot start or continue reviews.",
+      s4P1: "Launch plans include a monthly subscription, yearly subscription, and lifetime unlock. Prices vary by App Store country or region; the applicable localized price, currency, and trial eligibility are shown before purchase. Premium unlocks new-word study, daily and spaced review, recent-mistake review, advanced rounds, and new on-device AI learning content. Free users can view and edit saved cards and existing generated content, view study records, review history, and statistics, and back up or export their library, but cannot start new-word study or reviews.",
+      s4P2: "When offered by Apple and available to you, the monthly plan may include a 7-day trial and the yearly plan a 1-month trial. Both plans belong to the same subscription group, so each customer can redeem only one introductory subscription offer. Apple shows your trial eligibility, local price, and renewal terms before purchase. Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the current period ends; manage or cancel in your Apple Account settings. Lifetime access is a one-time purchase and does not renew. We do not accept payments on this website or receive your payment card details. Saved content remains available after membership expires, but you cannot start or continue new-word study or reviews.",
       s5Title: "5. Contact Us",
       s5P1: "Still have questions or feedback? Reach us anytime by email at:"
     },
@@ -382,15 +380,15 @@ const translations = {
     termsPage: {
       kicker: "Terms & Conditions",
       title: "LexiSprig Terms of Use",
-      updated: "Last Updated: October 15, 2026",
+      updated: "Last Updated: October 16, 2026",
       s1Title: "1. Acceptance of Terms & Apple Standard EULA",
       s1P1: "By downloading or using LexiSprig, you agree to these Terms of Use. LexiSprig is also subject to the Apple Standard End User License Agreement (EULA):",
       eulaLink: "Apple Standard EULA",
       s2Title: "2. Current Release and In-App Purchases",
-      s2P1: "Launch plans include a monthly subscription, yearly subscription, and one-time lifetime unlock. Premium unlocks daily and spaced review, recent-mistake review, advanced rounds, and new on-device AI learning content. Free users can view and edit saved cards, learn new words, view study records and statistics, and back up or export. Membership expiration does not delete saved content, but an active Premium entitlement is required to start or continue reviews. Purchases are made through Apple App Store; this website does not provide checkout or collect payments.",
-      s2P2: "Current configured reference prices are ¥12/month, ¥68/year, and ¥168 one time in mainland China; and US$2.99/month, US$14.99/year, and US$39.99 one time in the United States. Other storefronts show localized prices. When offered by Apple and available to you, the monthly plan may include a 7-day trial and the yearly plan a 1-month trial. Both are in the same subscription group, and each customer may redeem only one introductory subscription offer. Before purchase, Apple shows your local price, taxes, trial eligibility, and renewal terms. Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the current period ends; manage or cancel in your Apple Account settings. Lifetime access is a one-time purchase and does not renew.",
+      s2P1: "Launch plans include a monthly subscription, yearly subscription, and one-time lifetime unlock. Premium unlocks new-word study, daily and spaced review, recent-mistake review, advanced rounds, and new on-device AI learning content. Free users can view and edit saved cards and existing generated content, view study and review records and statistics, and back up or export, but cannot start or continue new-word study or reviews. Membership expiration does not delete saved content. Purchases are made through Apple App Store; this website does not provide checkout or collect payments.",
+      s2P2: "Available plans include a monthly subscription, yearly subscription, and lifetime unlock. Prices vary by App Store country or region; the App Store shows the localized price, currency, taxes, and trial eligibility before purchase. When offered by Apple and available to you, the monthly plan may include a 7-day trial and the yearly plan a 1-month trial. Both are in the same subscription group, and each customer may redeem only one introductory subscription offer. Before purchase, Apple shows the renewal terms. Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the current period ends; manage or cancel in your Apple Account settings. Lifetime access is a one-time purchase and does not renew.",
       s3Title: "3. Your Content and Learning Data",
-      s3P1: "Your photos, vocabulary cards, and study records are stored on your device and may be backed up or exported at your choice. Without an active premium entitlement, you can still view saved cards, generated content, study records, review history, and statistics, but you cannot start or continue a review session. Membership expiration does not delete or hide this content or data.",
+      s3P1: "Your photos, vocabulary cards, and study records are stored on your device and may be backed up or exported at your choice. Without an active premium entitlement, you can still view saved cards, generated content, study records, review history, and statistics, but you cannot start or continue new-word study or a review session. Membership expiration does not delete or hide this content or data.",
       s4Title: "4. Local AI Models & Reference-Only Output Disclaimer",
       s4P1: "Downloading the offline on-device AI model requires device storage. AI-generated word meanings, examples, Scene Passages, and review explanations are for language-learning reference and may be incomplete or inaccurate; check important information against a reliable dictionary.",
       s5Title: "5. User Responsibility & Contact",
@@ -466,20 +464,18 @@ const pageMeta = {
 
 const screenshotAlts = {
   zh: {
-    1: "真实拾词贴 App 截图 01 待补充",
-    2: "真实拾词贴 App 截图 02 待补充",
-    3: "真实拾词贴 App 截图 03 待补充",
-    4: "真实拾词贴 App 截图 04 待补充",
-    5: "真实拾词贴 App 截图 05 待补充",
-    6: "真实拾词贴 App 截图 06 待补充"
+    1: "实景照片生成的多语词卡",
+    2: "场景短文与目标词高亮",
+    3: "复习答案反馈与例句解析",
+    4: "同一场景中的英语、日语与中文词卡",
+    5: "复习进度与记忆曲线"
   },
   en: {
-    1: "Real LexiSprig app screenshot 01 is pending",
-    2: "Real LexiSprig app screenshot 02 is pending",
-    3: "Real LexiSprig app screenshot 03 is pending",
-    4: "Real LexiSprig app screenshot 04 is pending",
-    5: "Real LexiSprig app screenshot 05 is pending",
-    6: "Real LexiSprig app screenshot 06 is pending"
+    1: "Real-life photo turned into multilingual vocabulary cards",
+    2: "A scene story with highlighted target words",
+    3: "Review answer feedback and sentence explanation",
+    4: "English, Japanese, and Chinese vocabulary from one scene",
+    5: "Review progress and memory curve"
   }
 };
 
@@ -565,14 +561,13 @@ function applyLanguage(lang, persist = false) {
     btn.setAttribute("aria-pressed", isActive ? "true" : "false");
   });
 
-  // Keep screenshot slots visibly pending until genuine current-app captures replace them.
-  document.querySelectorAll("[data-screenshot]").forEach((slot) => {
-    const slotNum = Number(slot.getAttribute("data-screenshot"));
+  // Use a genuine localized app capture for every feature and gallery screenshot slot.
+  document.querySelectorAll("img[data-screenshot]").forEach((image) => {
+    const slotNum = Number(image.getAttribute("data-screenshot"));
     const label = screenshotAlts[currentLang]?.[slotNum];
-    if (label) {
-      slot.textContent = label;
-      slot.setAttribute("aria-label", label);
-    }
+    const source = currentLang === "en" ? image.dataset.srcEn : image.dataset.srcZh;
+    if (source) image.setAttribute("src", source);
+    if (label) image.setAttribute("alt", label);
   });
 
   // Update hamburger button aria-label
