@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
   <title>隐私政策 — 拾词贴 LexiSprig</title>
-  <meta name="description" content="拾词贴隐私政策：照片与词库默认保存在本机，本地 AI 离线运行，支持个人 iCloud Drive 增量备份。">
+  <meta name="description" content="拾词贴隐私政策：照片与词库默认保存在本机；使用云端 AI 时，任务所需的照片或文字会发送给你选择的服务商。">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
@@ -72,7 +72,7 @@
           <span data-i18n="privacyPage.kicker">隐私与数据安全</span>
         </div>
         <h1 data-i18n="privacyPage.title">拾词贴 LexiSprig 隐私政策</h1>
-        <p class="subpage-meta" data-i18n="privacyPage.updated">最后更新：2026 年 10 月 15 日</p>
+        <p class="subpage-meta" data-i18n="privacyPage.updated">最后更新：2026 年 10 月 28 日</p>
       </header>
 
       <div class="legal-stack">
@@ -97,8 +97,10 @@
             <h2 data-i18n="privacyPage.s2Title">2. 设备端处理与所用服务</h2>
           </div>
           <p data-i18n="privacyPage.s2P1">词条内容、场景短文和复习讲解使用设备端 E4B 模型。首次下载模型时，App 会按地区与可用性从 Cloudflare R2、Hugging Face（含镜像）或 ModelScope 获取模型文件；托管服务会收到下载所需的常规网络请求信息，例如 IP 地址和所请求的资源。下载模型不会上传你的照片、词卡或学习记录，服务商按各自隐私政策处理请求信息。图片识别、翻译与语音功能使用 Apple 系统框架，具体能力和资源要求取决于设备与系统支持；系统语言资源、iCloud 备份及 App Store 购买或恢复也会连接相应 Apple 服务。</p>
-          <p data-i18n="privacyPage.s2P2">我们不运营用于推理或分析你的照片、语音、词卡和学习内容的开发者后端。若你开启 iCloud 备份或主动分享内容，所选数据会传送到你选择的 Apple iCloud 账户或灵感树洞 App，以完成该功能。</p>
-          <p data-i18n="privacyPage.s2P3">为排查生成故障，App 会在设备本地保存有容量上限的诊断事件日志，记录操作/词卡标识、处理阶段、模型与语种、照片尺寸和大小、响应长度及错误类别；不记录照片内容、提示词或模型回复正文，也不会自动上传给开发者。日志随 App 本机数据一并移除。</p>
+          <p data-i18n="privacyPage.s2P2">我们不运营用于推理或分析你的照片、语音、词卡和学习内容的开发者后端。若你在 App 中接入并选择云端模型，发起云端 AI 任务前 App 会说明相关数据及可能费用并要求你确认；该任务所需的照片或文字会直接发送给你选择的服务商处理。服务商可能依据自己的条款和隐私政策处理或保存请求。</p>
+          <p data-i18n="privacyPage.s2P3">若你开启 iCloud 备份或主动分享内容，所选数据会传送到你选择的 Apple iCloud 账户或灵感树洞 App，以完成该功能。</p>
+          <p data-i18n="privacyPage.s2P4">为排查生成故障，App 会在设备本地保存有容量上限的诊断事件日志，记录操作/词卡标识、处理阶段、模型与语种、照片尺寸和大小、响应长度及错误类别；不记录照片内容、提示词或模型回复正文，也不会自动上传给开发者。日志随 App 本机数据一并移除。</p>
+          <p data-i18n="privacyPage.s2P5">你输入的云端 API Key 保存在本设备的 iOS Keychain 中，不会通过 iCloud Keychain 同步到其他设备。设置页的模型测试使用 App 内置样图，不会读取你的个人照片；正式云端任务会按你的选择发送对应照片或文字。</p>
         </article>
 
         <article class="legal-card">
