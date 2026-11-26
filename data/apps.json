@@ -1,0 +1,140 @@
+{
+  "products": [
+    {
+      "product_id": "lexisprig",
+      "site_id": "lexisprig",
+      "name": {
+        "zh": "拾词贴",
+        "en": "LexiSprig"
+      },
+      "description": {
+        "zh": "拍下日常场景，把画面中的事物变成英、日、中文词卡和场景短文，帮你在真实语境中积累表达。",
+        "en": "Turn everyday scenes into multilingual word cards, short stories, and example sentences."
+      },
+      "url": {
+        "zh": "https://lexisprig-app.github.io/",
+        "en": "https://lexisprig-app.github.io/"
+      }
+    },
+    {
+      "product_id": "displaypreset",
+      "site_id": "displayset",
+      "name": {
+        "zh": "DisplayPreset",
+        "en": "DisplayPreset"
+      },
+      "description": {
+        "zh": "在 macOS 本机保存并一键恢复已连接显示器的配置。",
+        "en": "Save and restore your connected display configuration on macOS, with one click."
+      },
+      "url": {
+        "zh": "https://displayset.github.io/zh-hans.html",
+        "en": "https://displayset.github.io/"
+      },
+      "icon": {
+        "src": "assets/app-icons/displaypreset.png",
+        "source": "https://raw.githubusercontent.com/DisplaySet/displayset.github.io/main/assets/displaypreset-icon.png"
+      }
+    },
+    {
+      "product_id": "displaypilot",
+      "site_id": "displayset",
+      "name": {
+        "zh": "DisplayPilot",
+        "en": "DisplayPilot"
+      },
+      "description": {
+        "zh": "macOS 窗口布局与应用工作集工具，可保存并恢复多屏窗口环境。",
+        "en": "Save and restore window layouts and app workspaces across your Mac displays."
+      },
+      "url": {
+        "zh": "https://displayset.github.io/zh-hans-displaypilot.html",
+        "en": "https://displayset.github.io/displaypilot.html"
+      },
+      "icon": {
+        "src": "assets/app-icons/displaypilot.png",
+        "source": "https://raw.githubusercontent.com/DisplaySet/displayset.github.io/main/assets/displaypilot-icon.png"
+      }
+    },
+    {
+      "product_id": "scriptpace",
+      "site_id": "scriptpace",
+      "name": {
+        "zh": "稿随",
+        "en": "ScriptPace"
+      },
+      "description": {
+        "zh": "本地优先的 Mac 语音跟随提词器，支持 iPhone 排练和 Apple Watch 遥控。",
+        "en": "A local-first voice-tracking teleprompter for Mac, with iPhone rehearsal and Apple Watch remote control."
+      },
+      "url": {
+        "zh": "https://scriptpace.github.io/zh-hans/",
+        "en": "https://scriptpace.github.io/en/"
+      },
+      "icon": {
+        "src": "assets/app-icons/scriptpace.png",
+        "source": "https://raw.githubusercontent.com/scriptpace/scriptpace.github.io/main/assets/brand/scriptpace-app-icon.png"
+      }
+    },
+    {
+      "product_id": "beiwen",
+      "site_id": "beiwen",
+      "name": {
+        "zh": "备问",
+        "en": "Beiwen"
+      },
+      "description": {
+        "zh": "离线优先的应急 AI 助理，可用本地模型进行问答、翻译和图片线索参考。",
+        "en": "An offline-first emergency AI assistant for on-device questions, translation, and image-based clues."
+      },
+      "url": {
+        "zh": "https://beiwen-app.github.io/",
+        "en": "https://beiwen-app.github.io/"
+      },
+      "icon": {
+        "src": "assets/app-icons/beiwen.png",
+        "source": "https://raw.githubusercontent.com/beiwen-app/beiwen-app.github.io/main/assets/beiwen/icon/app-icon.png"
+      }
+    },
+    {
+      "product_id": "inspiration-draft",
+      "site_id": "inspiration-draft",
+      "name": {
+        "zh": "灵感树洞",
+        "en": "InspirationDraft"
+      },
+      "description": {
+        "zh": "随手留下灵感，准备好时再整理、继续发展。",
+        "en": "Capture ideas as they come, then organize and develop them when you’re ready."
+      },
+      "url": {
+        "zh": "https://inspiration-draft.github.io/",
+        "en": "https://inspiration-draft.github.io/"
+      },
+      "icon": {
+        "src": "assets/app-icons/inspiration-draft.png",
+        "source": "https://raw.githubusercontent.com/inspiration-draft/inspiration-draft.github.io/main/icons/app_icon.png"
+      }
+    },
+    {
+      "product_id": "wristmark",
+      "site_id": "wristmark",
+      "name": {
+        "zh": "时扣",
+        "en": "WristMark"
+      },
+      "description": {
+        "zh": "面向 iPhone 与智能手表的私密会议助手，支持抬腕录音、标记重点、本地离线转写，并把纪要整理为提醒与日历草稿。",
+        "en": "A private meeting assistant for iPhone and Apple Watch, with wrist recording, highlight markers, offline transcription, and reminder and calendar drafts."
+      },
+      "url": {
+        "zh": "https://wristmark-app.github.io/",
+        "en": "https://wristmark-app.github.io/"
+      },
+      "icon": {
+        "src": "assets/app-icons/wristmark.svg",
+        "source": "https://raw.githubusercontent.com/wristmark-app/wristmark-app.github.io/main/icons/variants/AppIcon_Default.svg"
+      }
+    }
+  ]
+}

@@ -12,6 +12,8 @@ const translations = {
       privacy: "隐私政策",
       terms: "使用条款",
       accessibility: "无障碍",
+      chinese: "中文",
+      english: "English",
       openMenu: "打开导航菜单",
       closeMenu: "关闭导航菜单"
     },
@@ -207,7 +209,7 @@ const translations = {
   en: {
     nav: {
       brand: "LexiSprig",
-      tagline: "Real-Life Multilingual Vocabulary",
+      tagline: "Real-World Vocabulary",
       pain3: "Understand in Context",
       pain2: "Life Into Topics",
       pain1: "Multi-Language",
@@ -217,6 +219,8 @@ const translations = {
       privacy: "Privacy",
       terms: "Terms",
       accessibility: "Accessibility",
+      chinese: "Chinese",
+      english: "English",
       openMenu: "Open navigation menu",
       closeMenu: "Close navigation menu"
     },
@@ -251,7 +255,7 @@ const translations = {
       lead: "Stop memorizing isolated word lists. Start from the scenes you live in every day, read short passages, and turn passive words into expressions you can actually use:",
       point1Title: "Contextual Example Sentences & Audio Read-Aloud",
       point1Desc: "Every vocabulary entry comes with natural example sentences tailored to your scene and one-tap speech playback.",
-      point2Title: "Multi-Word Scene Passages (Target Words Underlined)",
+      point2Title: "Multi-Word Scene Passages with Underlined Target Words",
       point2Desc: "Weave multiple words from the same photo into a cohesive short passage with underlined target words so you see how they work together.",
       point3Title: "Sentence Explanations After Review",
       point3Desc: "See the example translation and an explanation of how a key word or phrase works in that sentence.",
@@ -273,7 +277,7 @@ const translations = {
       kicker: "Learning more than one language—and tired of jumping between different apps?",
       title: "Learn Multiple Languages in One Scene—Without Switching Back and Forth",
       lead: "Trying to keep up with both English and Japanese, only to waste time jumping between dictionaries? Capture a scene once and build all your target languages together:",
-      point1Title: "Decoupled Learning Languages (Multi-Select) & Explanation Language (Single-Select)",
+      point1Title: "Multiple Learning Languages and a Single Explanation Language",
       point1Desc: "Select English, Japanese, and Chinese simultaneously as learning targets while keeping all definitions and AI feedback in your single preferred explanation language.",
       point2Title: "Side-by-Side Language Cards",
       point2Desc: "Review words from the same photo together. When you add a learning language, missing entries are queued for generation.",
@@ -367,7 +371,7 @@ const translations = {
       s1P1: "Your captured or imported scene photos, stickers, vocabulary cards, and review records are stored on your device by default. Voice search processes live audio on-device only when supported by the system and authorized by you; the app does not save it as a recording.",
       s1P2: "We do not require user accounts, we do not operate backend servers that collect or store your photos or vocabulary library, and we do not include third-party advertising or tracking SDKs.",
       s2Title: "2. On-Device Processing & Services We Use",
-      s2P1: "Vocabulary content, Scene Passages, and review explanations use the on-device E4B model. For the initial model download, the app retrieves model files from Cloudflare R2, Hugging Face (including mirrors), or ModelScope depending on your region and availability. These hosts receive standard request information needed to deliver the files, such as your IP address and the requested resource. Model downloads do not upload your photos, cards, or study records; providers handle request information under their own privacy policies. Image recognition, translation, and speech features use Apple system frameworks; availability and resource requirements depend on your device and system support. System language assets, iCloud backup, and App Store purchases or restores also connect to the relevant Apple services.",
+      s2P1: "Vocabulary content, Scene Passages, and review explanations use the on-device E4B model. For the initial model download, the app retrieves model files from Cloudflare R2, Hugging Face and its mirrors, or ModelScope depending on your region and availability. These hosts receive standard request information needed to deliver the files, such as your IP address and the requested resource. Model downloads do not upload your photos, cards, or study records; providers handle request information under their own privacy policies. Image recognition, translation, and speech features use Apple system frameworks; availability and resource requirements depend on your device and system support. System language assets, iCloud backup, and App Store purchases or restores also connect to the relevant Apple services.",
       s2P2: "We do not operate a developer backend that runs inference on or analyzes your photos, voice input, vocabulary cards, or study content. If you enable iCloud backup or actively share content, the selected data is sent to your chosen Apple iCloud account or to InspirationDraft to provide that feature.",
       s2P3: "To diagnose generation failures, the app stores a size-limited event log on your device. It includes random operation and concept identifiers, timestamps, events and processing stages, model and language names, photo byte size and dimensions, response length, item counts, and error types or codes. It does not record photo content, prompts, or model response text, and the app does not automatically upload this log to the developer. The log is removed with the app's local data.",
       s3Title: "3. iCloud Backup & Local Export / Import",
@@ -384,7 +388,7 @@ const translations = {
       title: "LexiSprig Terms of Use",
       updated: "Last Updated: October 16, 2026",
       s1Title: "1. Acceptance of Terms & Apple Standard EULA",
-      s1P1: "By downloading or using LexiSprig, you agree to these Terms of Use. LexiSprig is also subject to the Apple Standard End User License Agreement (EULA):",
+      s1P1: "By downloading or using LexiSprig, you agree to these Terms of Use. The Apple Standard End User License Agreement, commonly called the EULA, also applies:",
       eulaLink: "Apple Standard EULA",
       s2Title: "2. Current Release and In-App Purchases",
       s2P1: "Launch plans include a monthly subscription, yearly subscription, and one-time lifetime unlock. Premium unlocks new-word study, daily and spaced review, recent-mistake review, advanced rounds, and new on-device AI learning content. Free users can view and edit saved cards and existing generated content, view study and review records and statistics, and back up or export, but cannot start or continue new-word study or reviews. Membership expiration does not delete saved content. Purchases are made through Apple App Store; this website does not provide checkout or collect payments.",
@@ -553,6 +557,10 @@ function applyLanguage(lang, persist = false) {
     if (ogTitle) ogTitle.setAttribute("content", meta.title);
     const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute("content", meta.description);
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) twitterTitle.setAttribute("content", meta.title);
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDesc) twitterDesc.setAttribute("content", meta.description);
   }
 
   // Update language switcher buttons active state
@@ -610,7 +618,7 @@ function setupNavigation() {
     });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 860 && navToggle.getAttribute("aria-expanded") === "true") {
+      if (window.innerWidth > 1160 && navToggle.getAttribute("aria-expanded") === "true") {
         setMenuOpen(false);
       }
     });
