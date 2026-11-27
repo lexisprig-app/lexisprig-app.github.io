@@ -161,9 +161,9 @@ html[data-lang="en"] .legal-card p {
 }
 
 .navbar-inner {
-  max-width: 1140px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0.85rem 1.5rem;
+  padding: 0.85rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -227,6 +227,7 @@ html[data-lang="en"] .legal-card p {
   font-size: 0.92rem;
   font-weight: 500;
   padding: 0.35rem 0.2rem;
+  white-space: nowrap;
   transition: color 0.18s ease;
 }
 
@@ -1036,7 +1037,7 @@ html[data-lang="en"] .legal-card p {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1320px) {
   .nav-toggle {
     display: inline-flex;
   }
@@ -1082,7 +1083,9 @@ html[data-lang="en"] .legal-card p {
   .locale-switcher {
     align-self: flex-start;
   }
+}
 
+@media (max-width: 860px) {
   .hero {
     grid-template-columns: 1fr;
     text-align: left;
