@@ -12,6 +12,8 @@ const translations = {
       privacy: "隐私政策",
       terms: "使用条款",
       accessibility: "无障碍",
+      chinese: "中文",
+      english: "English",
       openMenu: "打开导航菜单",
       closeMenu: "关闭导航菜单"
     },
@@ -157,16 +159,16 @@ const translations = {
     privacyPage: {
       kicker: "隐私与数据安全",
       title: "拾词贴 LexiSprig 隐私政策",
-      updated: "最后更新：2026 年 10 月 28 日",
+      updated: "最后更新：2026 年 10 月 15 日",
       s1Title: "1. 本地优先的数据存储原则",
       s1P1: "你拍摄或导入的场景照片、贴纸、词卡和复习记录默认保存在设备本地。使用语音搜索时，仅在系统支持且你授权后，音频才会实时用于设备端识别；应用不会将它保存为录音。",
       s1P2: "我们不要求你注册账户，不运营存储用户词库或照片的开发者后端服务器，也不集成任何第三方广告或跨应用追踪 SDK。",
       s2Title: "2. 设备端处理与所用服务",
       s2P1: "词条内容、场景短文和复习讲解默认使用设备端 E4B 模型。首次下载模型时，App 会按地区与可用性从 Cloudflare R2、Hugging Face（含镜像）或 ModelScope 获取模型文件；托管服务会收到下载所需的常规网络请求信息，例如 IP 地址和所请求的资源。下载模型不会上传你的照片、词卡或学习记录，服务商按各自隐私政策处理请求信息。图片识别、翻译与语音功能使用 Apple 系统框架，具体能力和资源要求取决于设备与系统支持；系统语言资源、iCloud 备份及 App Store 购买或恢复也会连接相应 Apple 服务。",
-      s2P2: "我们不运营用于推理或分析你的照片、语音、词卡和学习内容的开发者后端。若你在 App 中接入并选择云端模型，发起云端 AI 任务前 App 会说明相关数据及可能费用并要求你确认；该任务所需的照片或文字会直接发送给你选择的服务商处理。服务商可能依据自己的条款和隐私政策处理或保存请求。",
-      s2P3: "若你开启 iCloud 备份或主动分享内容，所选数据会传送到你选择的 Apple iCloud 账户或灵感树洞 App，以完成该功能。",
-      s2P4: "为排查生成故障，App 会在设备本地保存有容量上限的诊断事件日志，包含随机操作和概念标识、时间、事件与处理阶段、模型与语种、照片数据大小和尺寸、响应长度、项目计数及错误类型/代码；不记录照片内容、提示词或模型回复正文，也不会自动上传给开发者。日志随 App 本机数据一并移除。",
-      s2P5: "你输入的云端 API Key 保存在本设备的 iOS Keychain 中，不会通过 iCloud Keychain 同步到其他设备。设置页的模型测试使用 App 内置样图，不会读取你的个人照片；正式云端任务会按你的选择发送对应照片或文字。",
+      s2P2: "我们不运营用于推理或分析你的照片、语音输入、词卡或学习内容的开发者后端。若你在 App 中连接并选择云端模型，我们会说明相关数据及可能产生的费用，并在云端 AI 任务开始前请你确认。完成该任务所需的照片或文字会直接发送给你选择的服务商。服务商可能依据自身条款和隐私政策处理或保留请求内容。",
+      s2P3: "如果你启用 iCloud 备份或主动分享内容，所选数据会发送到你选择的 Apple iCloud 账户或灵感树洞 App，以完成该功能。",
+      s2P4: "为排查生成故障，App 会在设备本地保存有容量上限的事件日志。日志包含随机操作和概念标识、时间戳、事件与处理阶段、模型及语言名称、照片字节数和尺寸、响应长度、条目数量，以及错误类型或代码。日志不记录照片内容、提示词或模型回复文本，不会自动上传给开发者；删除 App 本地数据时一并移除。",
+      s2P5: "你的云端 API 密钥保存在本设备的 iOS 钥匙串中，不会通过 iCloud 钥匙串同步到其他设备。设置中的模型测试使用 App 内置图片，不会读取你的个人照片；实际云端任务会将所选任务所需的照片或文字发送给你选择的服务商。",
       s3Title: "3. iCloud 备份与本地导入导出",
       s3P1: "如果你启用 iCloud 备份，场景图片、词汇数据与学习进度会备份到你个人 iCloud 账户的应用私有空间。开发者无法读取该私有备份；存储与账户由 Apple 提供并受 Apple 隐私政策约束。",
       s3P2: "导出或导入备份由你选择文件位置；将场景分享到「灵感树洞 (InspirationDraft)」时，你选择的照片和短文会交给该 App 创建灵感草稿。",
@@ -209,7 +211,7 @@ const translations = {
   en: {
     nav: {
       brand: "LexiSprig",
-      tagline: "Real-Life Multilingual Vocabulary",
+      tagline: "Real-World Vocabulary",
       pain3: "Understand in Context",
       pain2: "Life Into Topics",
       pain1: "Multi-Language",
@@ -219,6 +221,8 @@ const translations = {
       privacy: "Privacy",
       terms: "Terms",
       accessibility: "Accessibility",
+      chinese: "Chinese",
+      english: "English",
       openMenu: "Open navigation menu",
       closeMenu: "Close navigation menu"
     },
@@ -253,7 +257,7 @@ const translations = {
       lead: "Stop memorizing isolated word lists. Start from the scenes you live in every day, read short passages, and turn passive words into expressions you can actually use:",
       point1Title: "Contextual Example Sentences & Audio Read-Aloud",
       point1Desc: "Every vocabulary entry comes with natural example sentences tailored to your scene and one-tap speech playback.",
-      point2Title: "Multi-Word Scene Passages (Target Words Underlined)",
+      point2Title: "Multi-Word Scene Passages with Underlined Target Words",
       point2Desc: "Weave multiple words from the same photo into a cohesive short passage with underlined target words so you see how they work together.",
       point3Title: "Sentence Explanations After Review",
       point3Desc: "See the example translation and an explanation of how a key word or phrase works in that sentence.",
@@ -275,7 +279,7 @@ const translations = {
       kicker: "Learning more than one language—and tired of jumping between different apps?",
       title: "Learn Multiple Languages in One Scene—Without Switching Back and Forth",
       lead: "Trying to keep up with both English and Japanese, only to waste time jumping between dictionaries? Capture a scene once and build all your target languages together:",
-      point1Title: "Decoupled Learning Languages (Multi-Select) & Explanation Language (Single-Select)",
+      point1Title: "Multiple Learning Languages and a Single Explanation Language",
       point1Desc: "Select English, Japanese, and Chinese simultaneously as learning targets while keeping all definitions and AI feedback in your single preferred explanation language.",
       point2Title: "Side-by-Side Language Cards",
       point2Desc: "Review words from the same photo together. When you add a learning language, missing entries are queued for generation.",
@@ -364,12 +368,12 @@ const translations = {
     privacyPage: {
       kicker: "Privacy & Data Protection",
       title: "LexiSprig Privacy Policy",
-      updated: "Last Updated: October 28, 2026",
+      updated: "Last Updated: October 15, 2026",
       s1Title: "1. Local-First Storage Architecture",
       s1P1: "Your captured or imported scene photos, stickers, vocabulary cards, and review records are stored on your device by default. Voice search processes live audio on-device only when supported by the system and authorized by you; the app does not save it as a recording.",
       s1P2: "We do not require user accounts, we do not operate backend servers that collect or store your photos or vocabulary library, and we do not include third-party advertising or tracking SDKs.",
       s2Title: "2. On-Device Processing & Services We Use",
-      s2P1: "Vocabulary content, Scene Passages, and review explanations use the on-device E4B model by default. For the initial model download, the app retrieves model files from Cloudflare R2, Hugging Face (including mirrors), or ModelScope depending on your region and availability. These hosts receive standard request information needed to deliver the files, such as your IP address and the requested resource. Model downloads do not upload your photos, cards, or study records; providers handle request information under their own privacy policies. Image recognition, translation, and speech features use Apple system frameworks; availability and resource requirements depend on your device and system support. System language assets, iCloud backup, and App Store purchases or restores also connect to the relevant Apple services.",
+      s2P1: "Vocabulary content, Scene Passages, and review explanations use the on-device E4B model by default. For the initial model download, the app retrieves model files from Cloudflare R2, Hugging Face and its mirrors, or ModelScope depending on your region and availability. These hosts receive standard request information needed to deliver the files, such as your IP address and the requested resource. Model downloads do not upload your photos, cards, or study records; providers handle request information under their own privacy policies. Image recognition, translation, and speech features use Apple system frameworks; availability and resource requirements depend on your device and system support. System language assets, iCloud backup, and App Store purchases or restores also connect to the relevant Apple services.",
       s2P2: "We do not operate a developer backend that runs inference on or analyzes your photos, voice input, vocabulary cards, or study content. If you connect and select a cloud model in the app, we explain the relevant data and possible charges and ask you to confirm before a cloud AI task starts. The photo or text needed for that task is sent directly to your chosen provider. The provider may process or retain requests under its own terms and privacy policy.",
       s2P3: "If you enable iCloud backup or actively share content, the selected data is sent to your chosen Apple iCloud account or to InspirationDraft to provide that feature.",
       s2P4: "To diagnose generation failures, the app stores a size-limited event log on your device. It includes random operation and concept identifiers, timestamps, events and processing stages, model and language names, photo byte size and dimensions, response length, item counts, and error types or codes. It does not record photo content, prompts, or model response text, and the app does not automatically upload this log to the developer. The log is removed with the app's local data.",
@@ -388,7 +392,7 @@ const translations = {
       title: "LexiSprig Terms of Use",
       updated: "Last Updated: October 16, 2026",
       s1Title: "1. Acceptance of Terms & Apple Standard EULA",
-      s1P1: "By downloading or using LexiSprig, you agree to these Terms of Use. LexiSprig is also subject to the Apple Standard End User License Agreement (EULA):",
+      s1P1: "By downloading or using LexiSprig, you agree to these Terms of Use. The Apple Standard End User License Agreement, commonly called the EULA, also applies:",
       eulaLink: "Apple Standard EULA",
       s2Title: "2. Current Release and In-App Purchases",
       s2P1: "Launch plans include a monthly subscription, yearly subscription, and one-time lifetime unlock. Premium unlocks new-word study, daily and spaced review, recent-mistake review, advanced rounds, and new on-device AI learning content. Free users can view and edit saved cards and existing generated content, view study and review records and statistics, and back up or export, but cannot start or continue new-word study or reviews. Membership expiration does not delete saved content. Purchases are made through Apple App Store; this website does not provide checkout or collect payments.",
@@ -557,6 +561,10 @@ function applyLanguage(lang, persist = false) {
     if (ogTitle) ogTitle.setAttribute("content", meta.title);
     const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute("content", meta.description);
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) twitterTitle.setAttribute("content", meta.title);
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDesc) twitterDesc.setAttribute("content", meta.description);
   }
 
   // Update language switcher buttons active state
@@ -614,7 +622,7 @@ function setupNavigation() {
     });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 860 && navToggle.getAttribute("aria-expanded") === "true") {
+      if (window.innerWidth > 1320 && navToggle.getAttribute("aria-expanded") === "true") {
         setMenuOpen(false);
       }
     });
